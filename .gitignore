@@ -22,13 +22,16 @@
 
 # # --- Carpetas de salida / compilación ---
 # Presentacion/
-# output/
-# */output/
 # bin/
 # build/
 # dist/
 # .tmp_versions/
 # Module.symvers
+
+# --- Java: clases compiladas ---
+*.class
+output/
+**/output/
 
 # # --- Archivos de depuración ---
 # *.stackdump
