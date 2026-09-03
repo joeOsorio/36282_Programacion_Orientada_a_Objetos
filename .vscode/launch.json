@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "ProgramaLibreria",
+      "request": "launch",
+      "mainClass": "ProgramaLibreria",
+      "projectName": "36282_Programacion_Orientada_a_Objetos_cc8e42b5"
+    },
+    {
+      "type": "java",
       "name": "Veterinaria",
       "request": "launch",
       "mainClass": "Veterinaria",
