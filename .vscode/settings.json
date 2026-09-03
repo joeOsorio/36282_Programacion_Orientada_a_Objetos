@@ -1,0 +1,8 @@
+{
+    "code-runner.executorMap": {
+        "java": "cd $dir && javac -d ../output $fileName && java -cp ../output $fileNameWithoutExt"
+    },
+    "code-runner.runInTerminal": true,
+    "code-runner.saveFileBeforeRun": true,
+    "java.project.outputPath": "output"
+}

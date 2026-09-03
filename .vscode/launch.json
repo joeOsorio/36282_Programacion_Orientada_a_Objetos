@@ -1,0 +1,37 @@
+{
+  // Use IntelliSense para saber los atributos posibles.
+  // Mantenga el puntero para ver las descripciones de los existentes atributos.
+  // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "ProgramaLibreria",
+      "request": "launch",
+      "mainClass": "ProgramaLibreria",
+      "projectName": "36282_Programacion_Orientada_a_Objetos_cc8e42b5"
+    },
+    {
+      "type": "java",
+      "name": "Veterinaria",
+      "request": "launch",
+      "mainClass": "Veterinaria",
+      "projectName": "36282_Programacion_Orientada_a_Objetos_cc8e42b5"
+    },
+    {
+      "type": "java",
+      "name": "Current File",
+      "request": "launch",
+      "mainClass": "${file}"
+    },
+    {
+      "type": "java",
+      "name": "Depurar archivo actual (output)",
+      "request": "launch",
+      "mainClass": "${fileBasenameNoExtension}",
+      "classPaths": ["${fileDirname}/../output"],
+      "preLaunchTask": "Compilar Java (output)",
+      "console": "integratedTerminal"
+    }
+  ]
+}
