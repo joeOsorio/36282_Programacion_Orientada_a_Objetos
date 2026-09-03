@@ -1,34 +1,40 @@
-public class Rectangulo{
+public class Rectangulo {
   private double base;
   private double altura;
-  
-  /* Constructor*/
-  Rectangulo(){base =0; altura = 0;}  
-  Rectangulo(int base, int altura){
+
+  /* Constructor */
+  Rectangulo() {
+    base = 0;
+    altura = 0;
+  }
+
+  Rectangulo(int base, int altura) {
     this.base = base;
     this.altura = altura;
   }
 
-  public void setBase(double base){
+  public void setBase(double base) {
     this.base = base;
-  } 
-  
-  public void setAltura(double altura){
+  }
+
+  public void setAltura(double altura) {
     this.altura = altura;
   }
-  
-  public double getAltura(){
+
+  public double getAltura() {
     return altura;
   }
-  
-  public double getBase(){
+
+  public double getBase() {
     return base;
   }
-  
-  public double area(){
-   return base * altura;
+
+  public double area() {
+    return base * altura;
   }
-  
-  public double perimetro(){return (base * 2) + (altura * 2);}
+
+  public double perimetro() {
+    return (base * 2) + (altura * 2);
+  }
 
 }
