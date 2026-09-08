@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  html,body{margin:0;padding:0;background:#ffffff;}
+  #stage{
+    position:relative;
+    width:1060px;
+    height:640px;
+    font-family:'DejaVu Sans Mono','Consolas',monospace;
+    background:#ffffff;
+  }
+  .uml-class{
+    position:absolute;
+    top:50px;
+    width:380px;
+    border:1.5px solid #222;
+    background:#fbfbfb;
+    box-shadow:1px 1px 3px rgba(0,0,0,0.15);
+  }
+  #veterinaria{left:30px;}
+  #mascota{left:650px;}
+  .uml-title{
+    text-align:center;
+    font-weight:bold;
+    font-size:16px;
+    padding:8px 6px;
+    border-bottom:1.5px solid #222;
+    background:#e8eef7;
+  }
+  .uml-section{
+    padding:8px 10px;
+    border-bottom:1.5px solid #222;
+    font-size:12.5px;
+    line-height:1.55;
+    white-space:pre;
+  }
+  .uml-section:last-child{border-bottom:none;}
+  svg{position:absolute; top:0; left:0;}
+  .rel-label{
+    position:absolute;
+    top:66px; left:415px; width:230px; text-align:center;
+    font-size:12px; font-style:italic; font-family:Arial,Helvetica,sans-serif;
+  }
+  .mult{
+    position:absolute; top:100px;
+    font-size:13px; font-weight:bold; font-family:Arial,Helvetica,sans-serif;
+  }
+  .mult.left{left:418px;}
+  .mult.right{left:598px;}
+  .caption{
+    position:absolute; top:580px; left:0; width:1060px;
+    text-align:center;
+    font-family:Arial,Helvetica,sans-serif;
+    font-size:13px;
+    color:#333;
+  }
+</style>
+</head>
+<body>
+<div id="stage">
+
+  <div class="uml-class" id="veterinaria">
+    <div class="uml-title">Veterinaria</div>
+    <div class="uml-section">- input : Scanner
+- mascotas : Mascota[5]
+- contador : int</div>
+    <div class="uml-section">+ main(args : String[]) : void
++ registrar() : void
++ capturar(msj : String) : String
++ darDiagnostico() : void
++ test() : void</div>
+  </div>
+
+  <svg width="1060" height="640">
+    <polygon points="416,84 434,74 452,84 434,94" fill="#ffffff" stroke="#222" stroke-width="1.5"/>
+    <line x1="452" y1="84" x2="650" y2="84" stroke="#222" stroke-width="1.5"/>
+  </svg>
+  <div class="rel-label">agrega / consulta</div>
+  <div class="mult left">1</div>
+  <div class="mult right">0..5</div>
+
+  <div class="uml-class" id="mascota">
+    <div class="uml-title">Mascota</div>
+    <div class="uml-section">- nombre : String
+- edad : int
+- tipo : String
+- raza : String
+- diagnostico : String</div>
+    <div class="uml-section">+ Mascota(nombre, edad, tipo, raza, diagnostico)
++ Mascota()
++ getNombre() : String
++ setNombre(nombre : String) : void
++ getEdad() : int
++ setEdad(edad : int) : void
++ getTipo() : String
++ setTipo(tipo : String) : void
++ getRaza() : String
++ setRaza(raza : String) : void
++ getDiagnostico() : String
++ setDiagnostico(diagnostico : String) : void</div>
+  </div>
+
+  <div class="caption">Diagrama de clases &mdash; Veterinaria agrega (0..5) objetos Mascota mediante un arreglo.</div>
+
+</div>
+</body>
+</html>
