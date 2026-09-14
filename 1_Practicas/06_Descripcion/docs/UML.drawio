@@ -1,0 +1,79 @@
+<mxfile host="65bd71144e">
+    <diagram id="Lab6VeterinariaUML" name="Pagina-1">
+        <mxGraphModel dx="960" dy="770" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1600" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="main" value="Main" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="610" y="60" width="380" height="350" as="geometry"/>
+                </mxCell>
+                <mxCell id="maina" value="- input: Scanner&lt;div&gt;- veterinaria: Veterinaria&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" parent="main" vertex="1">
+                    <mxGeometry y="55" width="380" height="46" as="geometry"/>
+                </mxCell>
+                <mxCell id="maind" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="main" vertex="1">
+                    <mxGeometry y="101" width="380" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="mainm" value="+ main(String[]): void&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Menus e interaccion&lt;/div&gt;&lt;div&gt;- menuLogin(): void&lt;/div&gt;&lt;div&gt;- menuSuperUsuario(): void&lt;/div&gt;&lt;div&gt;- menuDoctor(): void&lt;/div&gt;&lt;div&gt;- contratarDoctor(): void&lt;/div&gt;&lt;div&gt;- despedirDoctor(): void&lt;/div&gt;&lt;div&gt;- suspenderDoctor(): void&lt;/div&gt;&lt;div&gt;- darDeAltaMascota(): void&lt;/div&gt;&lt;div&gt;- darDeBajaMascota(): void&lt;/div&gt;&lt;div&gt;- darDiagnostico(): void&lt;/div&gt;&lt;div&gt;- cargarDatosPrueba(): void&lt;/div&gt;&lt;div&gt;- test(): void&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Lectura segura de datos&lt;/div&gt;&lt;div&gt;- leerEntero(): int&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" parent="main" vertex="1">
+                    <mxGeometry y="109" width="380" height="241" as="geometry"/>
+                </mxCell>
+                <mxCell id="vet" value="Veterinaria" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="610" y="510" width="380" height="513" as="geometry"/>
+                </mxCell>
+                <mxCell id="veta" value="- doctores: Doctor[10]&lt;div&gt;- contadorDoctores: int&lt;/div&gt;&lt;div&gt;- siguienteNumeroEmpleado: int&lt;/div&gt;&lt;div&gt;- mascotas: Mascota[50]&lt;/div&gt;&lt;div&gt;- contadorMascotas: int&lt;/div&gt;&lt;div&gt;- siguienteIdMascota: int&lt;/div&gt;&lt;div&gt;- doctorActual: Doctor&lt;/div&gt;&lt;div&gt;- USUARIO_SUPER: String {static, final}&lt;/div&gt;&lt;div&gt;- CLAVE_SUPER: String {static, final}&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" parent="vet" vertex="1">
+                    <mxGeometry y="55" width="380" height="135" as="geometry"/>
+                </mxCell>
+                <mxCell id="vetd" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="vet" vertex="1">
+                    <mxGeometry y="190" width="380" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="vetm" value="+ Veterinaria()&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Sesion&lt;/div&gt;&lt;div&gt;+ loginSuperUsuario(String, String): boolean&lt;/div&gt;&lt;div&gt;+ loginDoctor(String, String): boolean&lt;/div&gt;&lt;div&gt;+ logout(): void&lt;/div&gt;&lt;div&gt;+ haySesionSuperUsuario(): boolean&lt;/div&gt;&lt;div&gt;+ haySesionDoctor(): boolean&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Gestion de doctores (requiere superusuario)&lt;/div&gt;&lt;div&gt;+ contratarDoctor(String, String, String, String): Doctor&lt;/div&gt;&lt;div&gt;+ despedirDoctor(int): boolean&lt;/div&gt;&lt;div&gt;+ suspenderDoctor(int): boolean&lt;/div&gt;&lt;div&gt;+ buscarDoctorPorUsuario(String): Doctor&lt;/div&gt;&lt;div&gt;+ buscarDoctorPorNumero(int): Doctor&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Gestion de mascotas (requiere doctor logueado y no suspendido)&lt;/div&gt;&lt;div&gt;+ darDeAltaMascota(String, String, int, String, String): Mascota&lt;/div&gt;&lt;div&gt;+ darDeBajaMascota(int): boolean&lt;/div&gt;&lt;div&gt;+ darDiagnostico(int, String): boolean&lt;/div&gt;&lt;div&gt;+ buscarMascota(int): Mascota&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Informacion&lt;/div&gt;&lt;div&gt;+ imprimirDoctores(): void&lt;/div&gt;&lt;div&gt;+ imprimirMascotas(): void&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" parent="vet" vertex="1">
+                    <mxGeometry y="198" width="380" height="315" as="geometry"/>
+                </mxCell>
+                <mxCell id="doc" value="Doctor" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="250" y="1200" width="430" height="469" as="geometry"/>
+                </mxCell>
+                <mxCell id="doca" value="// Informacion sensible (personal)&lt;div&gt;- nombre: String&lt;/div&gt;&lt;div&gt;- telefono: String&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Informacion de trabajo&lt;/div&gt;&lt;div&gt;- numeroEmpleado: int&lt;/div&gt;&lt;div&gt;- usuario: String&lt;/div&gt;&lt;div&gt;- clave: String&lt;/div&gt;&lt;div&gt;- suspendido: boolean&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Asociacion: mascotas atendidas&lt;/div&gt;&lt;div&gt;- mascotasAtendidas: Mascota[50]&lt;/div&gt;&lt;div&gt;- contadorAtendidas: int&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" parent="doc" vertex="1">
+                    <mxGeometry y="55" width="430" height="175" as="geometry"/>
+                </mxCell>
+                <mxCell id="docd" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="doc" vertex="1">
+                    <mxGeometry y="230" width="430" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="docm" value="+ Doctor(String, String, int, String, String)&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Setters&lt;/div&gt;&lt;div&gt;+ setSuspendido(boolean): void&lt;/div&gt;&lt;div&gt;+ setNombre(String): void&lt;/div&gt;&lt;div&gt;+ setTelefono(String): void&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Getters&lt;/div&gt;&lt;div&gt;+ getNombre(): String&lt;/div&gt;&lt;div&gt;+ getNumeroEmpleado(): int&lt;/div&gt;&lt;div&gt;+ getUsuario(): String&lt;/div&gt;&lt;div&gt;+ estaSuspendido(): boolean&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Otros metodos&lt;/div&gt;&lt;div&gt;+ verificarClave(String): boolean&lt;/div&gt;&lt;div&gt;+ registrarAtencion(Mascota): boolean&lt;/div&gt;&lt;div&gt;+ imprimirMascotasAtendidas(): void&lt;/div&gt;&lt;div&gt;+ toString(): String&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" parent="doc" vertex="1">
+                    <mxGeometry y="238" width="430" height="231" as="geometry"/>
+                </mxCell>
+                <mxCell id="pet" value="Mascota" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="910" y="1200" width="430" height="360" as="geometry"/>
+                </mxCell>
+                <mxCell id="peta" value="// Informacion sensible (personal y dueno)&lt;div&gt;- id: int&lt;/div&gt;&lt;div&gt;- nombre: String&lt;/div&gt;&lt;div&gt;- especie: String&lt;/div&gt;&lt;div&gt;- edad: int&lt;/div&gt;&lt;div&gt;- nombreDueno: String&lt;/div&gt;&lt;div&gt;- telefonoDueno: String&lt;/div&gt;&lt;div&gt;- diagnostico: String&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" parent="pet" vertex="1">
+                    <mxGeometry y="55" width="430" height="135" as="geometry"/>
+                </mxCell>
+                <mxCell id="petd" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="pet" vertex="1">
+                    <mxGeometry y="190" width="430" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="petm" value="+ Mascota(int, String, String, int, String, String)&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Setters&lt;/div&gt;&lt;div&gt;+ setDiagnostico(String): void&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Getters&lt;/div&gt;&lt;div&gt;+ getId(): int&lt;/div&gt;&lt;div&gt;+ getNombre(): String&lt;/div&gt;&lt;div&gt;+ getDiagnostico(): String&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Otros metodos&lt;/div&gt;&lt;div&gt;+ tieneDiagnostico(): boolean&lt;/div&gt;&lt;div&gt;+ toString(): String&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" parent="pet" vertex="1">
+                    <mxGeometry y="198" width="430" height="162" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_main_vet" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;usa&lt;/font&gt;" style="rounded=0;html=1;startArrow=none;startFill=0;endArrow=open;endFill=0;endSize=10;fontSize=12;exitX=0.501;exitY=1.006;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="mainm" target="vet" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_vet_doc" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;contrata (1 -- 0..10)&lt;/font&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=diamondThin;startFill=1;startSize=16;endArrow=none;fontSize=12;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="vet" target="doc" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_vet_pet" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;registra (1 -- 0..50)&lt;/font&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=diamondThin;startFill=1;startSize=16;endArrow=none;fontSize=12;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="vet" target="pet" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_doc_pet" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;diagnostica (0..* -- 0..*)&lt;/font&gt;" style="rounded=0;html=1;startArrow=none;startFill=0;endArrow=open;endFill=0;endSize=10;fontSize=12;entryX=0.004;entryY=0.683;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="peta" edge="1">
+                    <mxGeometry x="-0.0571" y="38" relative="1" as="geometry">
+                        <mxPoint x="682" y="1349" as="sourcePoint"/>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="legend" value="Leyenda" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;fontStyle=1;fontSize=13;spacingTop=4;" parent="1" vertex="1">
+                    <mxGeometry x="1070" y="570" width="360" height="232" as="geometry"/>
+                </mxCell>
+                <mxCell id="legend_txt" value="◆ (diamante relleno) = Composicion:&lt;div&gt;el contenedor crea y controla el ciclo de vida&lt;/div&gt;&lt;div&gt;del objeto (ej. Veterinaria contrata/despide&lt;/div&gt;&lt;div&gt;a sus Doctores).&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;Linea simple = Asociacion:&lt;/div&gt;&lt;div&gt;una clase solo referencia objetos que ya&lt;/div&gt;&lt;div&gt;existen y no controla su ciclo de vida (ej. un&lt;/div&gt;&lt;div&gt;Doctor solo anota que atendio a una Mascota&lt;/div&gt;&lt;div&gt;que la Veterinaria ya registro).&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;fontSize=11;whiteSpace=wrap;" parent="legend" vertex="1">
+                    <mxGeometry y="26" width="360" height="206" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
