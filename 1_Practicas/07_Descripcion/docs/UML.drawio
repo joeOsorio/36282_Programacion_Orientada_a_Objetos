@@ -1,0 +1,100 @@
+<mxfile host="65bd71144e">
+    <diagram id="Lab7BancoUML" name="Pagina-1">
+        <mxGraphModel dx="1129" dy="770" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1500" pageHeight="1400" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="main" value="Main" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="560" y="40" width="400" height="348" as="geometry"/>
+                </mxCell>
+                <mxCell id="maina" value="- input: Scanner&lt;div&gt;- banco: Banco&lt;/div&gt;&lt;div&gt;- cajero: Cajero&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" parent="main" vertex="1">
+                    <mxGeometry y="55" width="400" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="maind" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="main" vertex="1">
+                    <mxGeometry y="115" width="400" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="mainm" value="+ main(String[]): void&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Menus e interaccion&lt;/div&gt;&lt;div&gt;- menuSuperUsuario(): void&lt;/div&gt;&lt;div&gt;- menuCajero(): void&lt;/div&gt;&lt;div&gt;- abrirCuenta(): void&lt;/div&gt;&lt;div&gt;- cerrarCuenta(): void&lt;/div&gt;&lt;div&gt;- cargarDatosPrueba(): void&lt;/div&gt;&lt;div&gt;- test(): void&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Lectura segura de datos&lt;/div&gt;&lt;div&gt;- leerEntero(): int&lt;/div&gt;&lt;div&gt;- leerDouble(): double&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" parent="main" vertex="1">
+                    <mxGeometry y="123" width="400" height="225" as="geometry"/>
+                </mxCell>
+                <mxCell id="banco" value="Banco" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="560" y="440" width="400" height="478" as="geometry"/>
+                </mxCell>
+                <mxCell id="bancoa" value="- USUARIO_SUPER: String {static, final}&lt;div&gt;- CLAVE_SUPER: String {static, final}&lt;/div&gt;&lt;div&gt;- cuentas: CuentaBancaria[10]&lt;/div&gt;&lt;div&gt;- contadorCuentas: int&lt;/div&gt;&lt;div&gt;- siguienteNumeroCuenta: int&lt;/div&gt;&lt;div&gt;- superUsuarioActivo: boolean&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" parent="banco" vertex="1">
+                    <mxGeometry y="55" width="400" height="125" as="geometry"/>
+                </mxCell>
+                <mxCell id="bancod" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="banco" vertex="1">
+                    <mxGeometry y="180" width="400" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="bancom" value="+ Banco()&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Sesion (super usuario)&lt;/div&gt;&lt;div&gt;+ loginSuperUsuario(String, String): boolean&lt;/div&gt;&lt;div&gt;+ logout(): void&lt;/div&gt;&lt;div&gt;+ haySesionSuperUsuario(): boolean&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Gestion de cuentas (requiere super usuario)&lt;/div&gt;&lt;div&gt;+ abrirCuenta(String, double): CuentaBancaria&lt;/div&gt;&lt;div&gt;+ cerrarCuenta(int): boolean&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Consulta (usada por el Cajero)&lt;/div&gt;&lt;div&gt;+ buscarCuenta(int): CuentaBancaria&lt;/div&gt;&lt;div&gt;+ validarPin(int, String): boolean&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Informacion&lt;/div&gt;&lt;div&gt;+ imprimirCuentas(): void&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" parent="banco" vertex="1">
+                    <mxGeometry y="188" width="400" height="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="cajero" value="Cajero" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="1030" width="400" height="373" as="geometry"/>
+                </mxCell>
+                <mxCell id="cajeroa" value="- banco: Banco&lt;div&gt;- cuentaActual: CuentaBancaria&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" parent="cajero" vertex="1">
+                    <mxGeometry y="55" width="400" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="cajerod" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="cajero" vertex="1">
+                    <mxGeometry y="105" width="400" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="cajerom" value="+ Cajero(Banco)&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Sesion&lt;/div&gt;&lt;div&gt;+ login(int, String): boolean&lt;/div&gt;&lt;div&gt;+ logout(): void&lt;/div&gt;&lt;div&gt;+ haySesion(): boolean&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Operaciones (requieren sesion)&lt;/div&gt;&lt;div&gt;+ retirar(double): boolean&lt;/div&gt;&lt;div&gt;+ abonar(double): boolean&lt;/div&gt;&lt;div&gt;+ cambiarPin(String, String): boolean&lt;/div&gt;&lt;div&gt;+ eliminarCuentaActual(): boolean&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Informacion&lt;/div&gt;&lt;div&gt;+ imprimirRecibo(): void&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" parent="cajero" vertex="1">
+                    <mxGeometry y="113" width="400" height="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="cuenta" value="CuentaBancaria" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="760" y="1010" width="400" height="413" as="geometry"/>
+                </mxCell>
+                <mxCell id="cuentaa" value="- numeroCuenta: int&lt;div&gt;- titular: String&lt;/div&gt;&lt;div&gt;- pin: String&lt;/div&gt;&lt;div&gt;- saldo: double&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" parent="cuenta" vertex="1">
+                    <mxGeometry y="55" width="400" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="cuentad" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="cuenta" vertex="1">
+                    <mxGeometry y="135" width="400" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="cuentam" value="+ CuentaBancaria(int, String, String, double)&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Operaciones&lt;/div&gt;&lt;div&gt;+ retirar(double): boolean&lt;/div&gt;&lt;div&gt;+ abonar(double): boolean&lt;/div&gt;&lt;div&gt;+ verificarPin(String): boolean&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Setters&lt;/div&gt;&lt;div&gt;+ setPin(String): void&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Getters&lt;/div&gt;&lt;div&gt;+ getNumeroCuenta(): int&lt;/div&gt;&lt;div&gt;+ getTitular(): String&lt;/div&gt;&lt;div&gt;+ getSaldo(): double&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;+ toString(): String&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" parent="cuenta" vertex="1">
+                    <mxGeometry y="143" width="400" height="270" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_banco_cuenta" value="abre (1 -- 0..10)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=diamondThin;startFill=1;startSize=16;endArrow=none;fontSize=12;" parent="1" source="banco" target="cuenta" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_cajero_banco" value="consulta (1 -- 1)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=none;endArrow=open;endFill=0;endSize=10;fontSize=12;" parent="1" source="cajero" target="banco" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="400" y="974"/>
+                            <mxPoint x="720" y="974"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e_cajero_cuenta" value="atiende sesion (1 -- 0..1)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=none;endArrow=open;endFill=0;endSize=10;fontSize=12;" parent="1" source="cajero" target="cuenta" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="legend" value="Leyenda" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;fontStyle=1;fontSize=13;spacingTop=4;" parent="1" vertex="1">
+                    <mxGeometry x="1100" y="432.5" width="380" height="250" as="geometry"/>
+                </mxCell>
+                <mxCell id="legend_txt" value="◆ (diamante relleno) = Composicion:&lt;div&gt;el Banco crea y controla el ciclo de vida&lt;/div&gt;&lt;div&gt;de las cuentas (abre/cierra cuentas).&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;Linea simple = Asociacion:&lt;/div&gt;&lt;div&gt;una clase solo referencia objetos que ya&lt;/div&gt;&lt;div&gt;existen y no controla su ciclo de vida (el&lt;/div&gt;&lt;div&gt;Cajero solo consulta cuentas que el Banco&lt;/div&gt;&lt;div&gt;ya administra, y atiende la sesion activa&lt;/div&gt;&lt;div&gt;de la cuenta que inicio el login).&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;fontSize=11;whiteSpace=wrap;" parent="legend" vertex="1">
+                    <mxGeometry y="26" width="380" height="224" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="" style="endArrow=none;startArrow=none;endFill=0;startFill=0;endSize=8;html=1;verticalAlign=bottom;labelBackgroundColor=none;strokeWidth=3;exitX=0.404;exitY=-0.011;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.001;entryY=0.518;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="cajero" target="mainm">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="420" y="370" as="sourcePoint"/>
+                        <mxPoint x="580" y="370" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="360" y="280"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="3" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-size: 12px;&quot;&gt;usa&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="2">
+                    <mxGeometry x="0.1788" y="-2" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="4" value="" style="endArrow=none;startArrow=none;endFill=0;startFill=0;endSize=8;html=1;verticalAlign=bottom;labelBackgroundColor=none;strokeWidth=3;exitX=0.497;exitY=1.01;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="mainm" target="banco">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="640" y="470" as="sourcePoint"/>
+                        <mxPoint x="800" y="470" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

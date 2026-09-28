@@ -16,13 +16,12 @@ public class Main {
     public static void main(String[] args) {
         int opcion;
 
-        System.out.println("==================================================");
-        System.out.println("   VETERINARIA - SISTEMA DE GESTION DE CONSULTAS   ");
-        System.out.println("==================================================");
-        System.out.println("(Modo demo) Super usuario -> usuario: " + Veterinaria.USUARIO_SUPER
-                + "  clave: " + Veterinaria.CLAVE_SUPER);
-
         do {
+            System.out.println("==================================================");
+            System.out.println("   VETERINARIA - SISTEMA DE GESTION DE CONSULTAS   ");
+            System.out.println("==================================================");
+            System.out.println("(Modo demo) Super usuario -> usuario: " + Veterinaria.USUARIO_SUPER
+                    + "  clave: " + Veterinaria.CLAVE_SUPER);
             imprimirEstadoSesion();
             /*
              * System.out.println("\n1  -\tIniciar sesion como super usuario");
