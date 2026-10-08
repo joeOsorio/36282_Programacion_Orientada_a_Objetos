@@ -3,7 +3,7 @@
  * Administra los doctores y las mascotas de 
  * la veterinaria, y controla el login
  * del administrador y de doctores.
- * @Author: Joshua Osorio Osorio
+ * @Author: J03 O^2
  * @Date:   Septiembre/2026
  * **************************************************/
 public class Veterinaria {

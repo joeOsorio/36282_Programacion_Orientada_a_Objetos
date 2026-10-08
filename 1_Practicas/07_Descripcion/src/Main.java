@@ -5,7 +5,7 @@ import java.util.Scanner;
  * Laboratorio 7: Programa principal
  * Orquesta las clases Banco y Cajero (que a su vez
  * orquesta a CuentaBancaria). El Banco NO es el main.
- * @Author: Joshua Osorio Osorio
+ * @Author: J03 O^2
  * @Date:   Septiembre/2026
  * **************************************************/
 public class Main {

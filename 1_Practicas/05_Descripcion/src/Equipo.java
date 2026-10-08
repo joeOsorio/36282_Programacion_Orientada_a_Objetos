@@ -4,7 +4,7 @@
  * Empresa: nombre y hasta 5 miembros. Un Equipo solo
  * agrupa (asociacion) a Empleados que ya existen en la
  * Empresa y un mismo Empleado puede estar en varios Equipos.
- * @Author: Joshua Osorio Osorio
+ * @Author: J03 O^2
  * @Date:   Septiembre/2026
  * **************************************************/
 public class Equipo {

@@ -1,0 +1,275 @@
+<mxfile host="65bd71144e">
+    <diagram id="taller7-herencia" name="Taller 7">
+        <mxGraphModel dx="329" dy="183" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="1800" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="vet" parent="1" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" value="Persona" vertex="1">
+                    <mxGeometry height="440" width="400" x="1920" y="280" as="geometry"/>
+                </mxCell>
+                <mxCell id="veta" parent="vet" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;- ENERGIA_INICIAL: int = 2048 //static, final}&lt;/span&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;- MAX_ORGANOS: int = 6&amp;nbsp; //static, final}&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;- nombre: String&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;- energia: int&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;- defensa: int&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;- turnosDefensa: int&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;- organos: Organo[6]&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;- contador: int&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="125" width="400" y="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="vetd" parent="vet" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+                    <mxGeometry height="8" width="400" y="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="vetm" parent="vet" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;+ Persona(String nombre)&lt;/span&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;// Gestion de organos&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;+ agregarOrgano(Organo): boolean&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;+ getOrgano(int indice): Organo&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;// Combate&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;+ recibirAtaque(int danio): void&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;+ restaurarEnergia(int cantidad): void&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;+ aumentarDefensa(int cantidad, int turnos): void&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;+ actualizarTurno(): void&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;+ estaViva(): boolean&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;// Getters&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;+ getNombre(): String&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;+ getEnergia(): int&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;+ getDefensa(): int&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;+ getContador(): int&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;// Informacion&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;+ toString(): String&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="252" width="400" y="188" as="geometry"/>
+                </mxCell>
+                <mxCell id="doc" parent="1" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" value="Microbio" vertex="1">
+                    <mxGeometry height="440" width="400" x="1438" y="280" as="geometry"/>
+                </mxCell>
+                <mxCell id="doca" parent="doc" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;- ENERGIA_INICIAL: int = 256 // static, final&lt;/span&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;- ATAQUE: int = 40 //static y final&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;- energia: int&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;- defensa: int&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;- turnosDebilitado: int&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;- organoActual: Organo&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="105" width="400" y="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="docd" parent="doc" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+                    <mxGeometry height="8" width="400" y="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="docm" parent="doc" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;+ Microbio(int id)&lt;/span&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;// Movimiento&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;+ saltar(Organo, Persona): void&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;+ atacar(Persona): void&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;// Combate&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;+ recibirDanio(int danio): void&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;+ restaurarEnergia(int cantidad): void&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;+ debilitar(int cantidad, int turnos): void&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;+ actualizarTurno(): void&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;+ estaVivo(): boolean&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;// Getters&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;+ getId(): int&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;+ getEnergia(): int&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;+ getDefensa(): int&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;+ getOrganoActual(): Organo&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;// Informacion&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;+ toString(): String&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="272" width="400" y="168" as="geometry"/>
+                </mxCell>
+                <mxCell id="mas" parent="1" style="swimlane;fontStyle=3;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" value="Organo" vertex="1">
+                    <mxGeometry height="240" width="400" x="1230" y="910" as="geometry"/>
+                </mxCell>
+                <mxCell id="kRI6TAP-wOOqJ3nwSz80-8" parent="mas" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;# nombre: String&lt;/span&gt;" vertex="1">
+                    <mxGeometry height="48" width="400" y="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="masd" parent="mas" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+                    <mxGeometry height="8" width="400" y="103" as="geometry"/>
+                </mxCell>
+                <mxCell id="masm" parent="mas" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;+ Organo(String nombre)&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: rgb(63, 63, 63);&quot;&gt;// Polimorfismo (version por defecto: no hace nada)&lt;/span&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;+ aplicarEfecto(Persona, Microbio): void&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;+ getDescripcion(): String&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;// Getters&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;+ getNombre(): String&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;// Informacion&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;+ toString(): String&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="129" width="400" y="111" as="geometry"/>
+                </mxCell>
+                <mxCell id="per" parent="1" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" value="Cerebro" vertex="1">
+                    <mxGeometry height="208" width="380" x="70" y="1520" as="geometry"/>
+                </mxCell>
+                <mxCell id="pera" parent="per" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;- DEBILITA: int = 30 // static, final&lt;/span&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;- TURNOS: int = 3 // static, final&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;- RESTAURA: int = 32 // static, final // 2^5&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="65" width="380" y="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="perd" parent="per" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+                    <mxGeometry height="8" width="380" y="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="perm" parent="per" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;+ Cerebro()&lt;/span&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;@Override&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;+ aplicarEfecto(Persona, Microbio): void&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;@Override&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;+ getDescripcion(): String&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="80" width="380" y="128" as="geometry"/>
+                </mxCell>
+                <mxCell id="gat" parent="1" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" value="Corazon&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;" vertex="1">
+                    <mxGeometry height="180" width="380" x="550" y="1520" as="geometry"/>
+                </mxCell>
+                <mxCell id="gata" parent="gat" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;- DEFENSA: int = 30 // static y&amp;nbsp; final&lt;/span&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;- TURNOS: int = 3 // static y final&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="31" width="380" y="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="gatd" parent="gat" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+                    <mxGeometry height="8" width="380" y="86" as="geometry"/>
+                </mxCell>
+                <mxCell id="gatm" parent="gat" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;+ Corazon()&lt;/span&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;@Override&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;+ aplicarEfecto(Persona, Microbio): void&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;@Override&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;+ getDescripcion(): String&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="86" width="380" y="94" as="geometry"/>
+                </mxCell>
+                <mxCell id="ave" parent="1" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" value="Estomago" vertex="1">
+                    <mxGeometry height="174" width="380" x="1010" y="1520" as="geometry"/>
+                </mxCell>
+                <mxCell id="avea" parent="ave" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;- RESTAURA: int = 16 // static, final&amp;nbsp; 2^4&lt;/span&gt;" vertex="1">
+                    <mxGeometry height="31" width="380" y="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="aved" parent="ave" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+                    <mxGeometry height="8" width="380" y="86" as="geometry"/>
+                </mxCell>
+                <mxCell id="avem" parent="ave" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;+ Estomago()&lt;/span&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;@Override&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;+ aplicarEfecto(Persona, Microbio): void&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;@Override&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;+ getDescripcion(): String&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="80" width="380" y="94" as="geometry"/>
+                </mxCell>
+                <mxCell id="e5" edge="1" parent="1" source="per" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=none;endArrow=block;endFill=0;endSize=16;fontSize=12;" target="mas" value="">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="260" y="1020"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e6" edge="1" parent="1" source="gat" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=none;endArrow=block;endFill=0;endSize=16;fontSize=12;" target="mas" value="">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="730" y="1080"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e7" edge="1" parent="1" source="ave" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=none;endArrow=block;endFill=0;endSize=16;fontSize=12;entryX=0.403;entryY=1.023;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="masm" value="">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1200" y="1360"/>
+                            <mxPoint x="1391.2" y="1360"/>
+                        </Array>
+                        <mxPoint x="1200" y="1550" as="sourcePoint"/>
+                        <mxPoint x="1380" y="1180" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="6" edge="1" parent="1" source="vetm" style="endArrow=none;startArrow=diamondThin;endFill=0;startFill=0;html=1;verticalAlign=bottom;labelBackgroundColor=none;strokeWidth=1;startSize=8;endSize=8;entryX=1.005;entryY=0.132;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.006;exitY=0.064;exitDx=0;exitDy=0;exitPerimeter=0;" target="docm" value="">
+                    <mxGeometry relative="1" width="160" as="geometry">
+                        <mxPoint x="920" y="700" as="sourcePoint"/>
+                        <mxPoint x="920" y="660" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="7" connectable="0" parent="6" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-size: 12px;&quot;&gt;Infecta(1 -- 1)&lt;/span&gt;" vertex="1">
+                    <mxGeometry relative="1" x="0.0272" y="2" as="geometry">
+                        <mxPoint y="13" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="NLvelPn-B6NobvS2AZzj-7" parent="1" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" value="Pancreas" vertex="1">
+                    <mxGeometry height="180" width="380" x="1430" y="1520" as="geometry"/>
+                </mxCell>
+                <mxCell id="NLvelPn-B6NobvS2AZzj-8" parent="NLvelPn-B6NobvS2AZzj-7" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;- PORCENTAJE: int = 50 // static y final&lt;/span&gt;" vertex="1">
+                    <mxGeometry height="31" width="380" y="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="NLvelPn-B6NobvS2AZzj-9" parent="NLvelPn-B6NobvS2AZzj-7" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+                    <mxGeometry height="8" width="380" y="86" as="geometry"/>
+                </mxCell>
+                <mxCell id="NLvelPn-B6NobvS2AZzj-10" parent="NLvelPn-B6NobvS2AZzj-7" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;+ Pancreas()&lt;/span&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;@Override&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;// aplicarEfecto(Persona, Microbio): void&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;@Override&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(111, 195, 223, 0.6) rgb(0, 0, 0);&quot;&gt;//getDescripcion(): String&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="86" width="380" y="94" as="geometry"/>
+                </mxCell>
+                <mxCell id="kRI6TAP-wOOqJ3nwSz80-7" edge="1" parent="1" source="vet" style="endArrow=none;startArrow=diamondThin;endFill=0;startFill=1;html=1;verticalAlign=bottom;labelBackgroundColor=none;strokeWidth=1;startSize=8;endSize=8;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" target="mas" value="">
+                    <mxGeometry relative="1" width="160" as="geometry">
+                        <mxPoint as="offset"/>
+                        <Array as="points">
+                            <mxPoint x="2120" y="840"/>
+                            <mxPoint x="1430" y="840"/>
+                        </Array>
+                        <mxPoint x="740" y="1050" as="sourcePoint"/>
+                        <mxPoint x="900" y="1050" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="0pXd19cYeRJ3wN621-8f-7" connectable="0" parent="kRI6TAP-wOOqJ3nwSz80-7" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-size: 12px;&quot;&gt;contiene (1 - 6)&lt;/span&gt;" vertex="1">
+                    <mxGeometry relative="1" x="0.0547" as="geometry">
+                        <mxPoint x="-1" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="kRI6TAP-wOOqJ3nwSz80-9" parent="1" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" value="Rinones" vertex="1">
+                    <mxGeometry height="176" width="300" x="1870" y="1520" as="geometry"/>
+                </mxCell>
+                <mxCell id="kRI6TAP-wOOqJ3nwSz80-10" parent="kRI6TAP-wOOqJ3nwSz80-9" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="- PORCENTAJE: int = 15 //static&amp;nbsp; y final" vertex="1">
+                    <mxGeometry height="27" width="300" y="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="kRI6TAP-wOOqJ3nwSz80-11" parent="kRI6TAP-wOOqJ3nwSz80-9" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+                    <mxGeometry height="8" width="300" y="82" as="geometry"/>
+                </mxCell>
+                <mxCell id="kRI6TAP-wOOqJ3nwSz80-12" parent="kRI6TAP-wOOqJ3nwSz80-9" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="+ Rinones()&lt;div&gt;@Override&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;+ aplicarEfecto(Persona, Microbio): void&lt;/span&gt;&lt;/div&gt;&lt;div&gt;@Override&amp;nbsp;&lt;/div&gt;&lt;div&gt;+ getDescripcion(): String&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="86" width="300" y="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="kRI6TAP-wOOqJ3nwSz80-15" edge="1" parent="1" source="NLvelPn-B6NobvS2AZzj-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=none;endArrow=block;endFill=0;endSize=16;fontSize=12;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.6;entryY=1.007;entryDx=0;entryDy=0;entryPerimeter=0;" target="masm" value="">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1630" y="1360.06"/>
+                            <mxPoint x="1470" y="1360.06"/>
+                        </Array>
+                        <mxPoint x="1190" y="1624" as="sourcePoint"/>
+                        <mxPoint x="800" y="1330" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="kRI6TAP-wOOqJ3nwSz80-16" edge="1" parent="1" source="kRI6TAP-wOOqJ3nwSz80-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=none;endArrow=block;endFill=0;endSize=16;fontSize=12;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.457;entryDx=0;entryDy=0;entryPerimeter=0;" target="masm" value="">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="2020" y="1080"/>
+                        </Array>
+                        <mxPoint x="2180" y="1454" as="sourcePoint"/>
+                        <mxPoint x="1780" y="1060" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="kRI6TAP-wOOqJ3nwSz80-25" parent="1" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" value="Intestino" vertex="1">
+                    <mxGeometry height="149" width="300" x="2230" y="1520" as="geometry"/>
+                </mxCell>
+                <mxCell id="kRI6TAP-wOOqJ3nwSz80-27" parent="kRI6TAP-wOOqJ3nwSz80-25" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+                    <mxGeometry height="8" width="300" y="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="kRI6TAP-wOOqJ3nwSz80-28" parent="kRI6TAP-wOOqJ3nwSz80-25" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="+ SoloExistir():String // Solo para fines practicos." vertex="1">
+                    <mxGeometry height="86" width="300" y="63" as="geometry"/>
+                </mxCell>
+                <mxCell id="kRI6TAP-wOOqJ3nwSz80-29" edge="1" parent="1" source="kRI6TAP-wOOqJ3nwSz80-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=none;endArrow=block;endFill=0;endSize=16;fontSize=12;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1.004;entryY=1.051;entryDx=0;entryDy=0;entryPerimeter=0;" target="kRI6TAP-wOOqJ3nwSz80-8" value="">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="2380" y="1015.43"/>
+                        </Array>
+                        <mxPoint x="2277.2" y="1638" as="sourcePoint"/>
+                        <mxPoint x="1290" y="1214" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="Q8B7OlNNaeC8Ib0QZPmg-20" parent="1" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" value="Simulacion" vertex="1">
+                    <mxGeometry height="423" width="400" x="960" y="280" as="geometry"/>
+                </mxCell>
+                <mxCell id="Q8B7OlNNaeC8Ib0QZPmg-21" parent="Q8B7OlNNaeC8Ib0QZPmg-20" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="- MAX_MICROBIOS: int = 4 // static, final&lt;div&gt;- persona: Persona&lt;/div&gt;&lt;div&gt;- microbios: Microbio[4]&lt;/div&gt;&lt;div&gt;- contador: int&lt;/div&gt;&lt;div&gt;- turno: int&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="95" width="400" y="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="Q8B7OlNNaeC8Ib0QZPmg-22" parent="Q8B7OlNNaeC8Ib0QZPmg-20" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+                    <mxGeometry height="8" width="400" y="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="Q8B7OlNNaeC8Ib0QZPmg-23" parent="Q8B7OlNNaeC8Ib0QZPmg-20" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="+ Simulacion(Persona)&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Gestion de microbios&lt;/div&gt;&lt;div&gt;+ agregarMicrobio(Microbio): boolean&lt;/div&gt;&lt;div&gt;+ quedanMicrobios(): boolean&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Batalla&lt;/div&gt;&lt;div&gt;+ iniciar(): void&lt;/div&gt;&lt;div&gt;- ejecutarTurno(): void&lt;/div&gt;&lt;div&gt;- elegirOrgano(): Organo&lt;/div&gt;&lt;div&gt;- hayGanador(): boolean&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Informacion&lt;/div&gt;&lt;div&gt;+ mostrarEstado(): void&lt;/div&gt;&lt;div&gt;+ getTurno(): int&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="265" width="400" y="158" as="geometry"/>
+                </mxCell>
+                <mxCell id="Q8B7OlNNaeC8Ib0QZPmg-24" parent="1" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" value="Main" vertex="1">
+                    <mxGeometry height="270" width="400" x="480" y="280" as="geometry"/>
+                </mxCell>
+                <mxCell id="Q8B7OlNNaeC8Ib0QZPmg-25" parent="Q8B7OlNNaeC8Ib0QZPmg-24" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="- input: Scanner {static}&lt;div&gt;- simulacion: Simulacion {static}&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="44" width="400" y="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="Q8B7OlNNaeC8Ib0QZPmg-26" parent="Q8B7OlNNaeC8Ib0QZPmg-24" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+                    <mxGeometry height="8" width="400" y="99" as="geometry"/>
+                </mxCell>
+                <mxCell id="Q8B7OlNNaeC8Ib0QZPmg-27" parent="Q8B7OlNNaeC8Ib0QZPmg-24" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="+ main(String[]): void&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Menu&lt;/div&gt;&lt;div&gt;- iniciarSimulacion(): void&lt;/div&gt;&lt;div&gt;- test(): void&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Captura&lt;/div&gt;&lt;div&gt;- leerEntero(String): int&lt;/div&gt;&lt;div&gt;- leerTexto(String): String&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="163" width="400" y="107" as="geometry"/>
+                </mxCell>
+                <mxCell id="Q8B7OlNNaeC8Ib0QZPmg-28" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=none;endArrow=open;endFill=0;endSize=10;fontSize=12;" value="enfrenta (1 -- 1)">
+                    <mxGeometry relative="1" x="0.1248" y="26" as="geometry">
+                        <mxPoint as="offset"/>
+                        <Array as="points">
+                            <mxPoint x="1399.28" y="444.4"/>
+                        </Array>
+                        <mxPoint x="1360.53" y="444.44" as="sourcePoint"/>
+                        <mxPoint x="1438" y="444.21" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="Q8B7OlNNaeC8Ib0QZPmg-30" edge="1" parent="1" source="Q8B7OlNNaeC8Ib0QZPmg-24" style="rounded=0;html=1;startArrow=none;startFill=0;endArrow=open;endFill=0;endSize=10;fontSize=12;entryX=-0.002;entryY=0.86;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="Q8B7OlNNaeC8Ib0QZPmg-21" value="usa">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1010" y="230" as="sourcePoint"/>
+                        <mxPoint x="910" y="380" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="Q8B7OlNNaeC8Ib0QZPmg-31" edge="1" parent="1" source="Q8B7OlNNaeC8Ib0QZPmg-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=diamondThin;startFill=1;startSize=16;endArrow=none;fontSize=12;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="doc" value="crea (1 -- 4)">
+                    <mxGeometry relative="1" x="0.0031" as="geometry">
+                        <mxPoint as="offset"/>
+                        <Array as="points">
+                            <mxPoint x="1160" y="200.06"/>
+                            <mxPoint x="1638" y="200.06"/>
+                        </Array>
+                        <mxPoint x="1290" y="140" as="sourcePoint"/>
+                        <mxPoint x="2270" y="110" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="0pXd19cYeRJ3wN621-8f-8" edge="1" parent="1" source="doc" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=none;endArrow=open;endFill=0;endSize=10;fontSize=12;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" value="viaja a (1 -- 0..1)">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1638" y="790.06"/>
+                            <mxPoint x="1390" y="790.06"/>
+                        </Array>
+                        <mxPoint x="1790" y="790" as="sourcePoint"/>
+                        <mxPoint x="1390" y="910" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="0pXd19cYeRJ3wN621-8f-9" edge="1" parent="1" source="mas" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;startArrow=none;endArrow=open;endFill=0;endSize=10;fontSize=12;entryX=0.652;entryY=0.999;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.75;exitY=0;exitDx=0;exitDy=0;" target="vetm" value="afecta a (Persona, Microbio)">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1530" y="880.06"/>
+                            <mxPoint x="2180.82" y="880.06"/>
+                        </Array>
+                        <mxPoint x="2150" y="1334" as="sourcePoint"/>
+                        <mxPoint x="1850" y="980" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="0pXd19cYeRJ3wN621-8f-10" edge="1" parent="1" source="mas" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;startArrow=none;endArrow=open;endFill=0;endSize=10;fontSize=12;entryX=0.652;entryY=0.999;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.25;exitY=0;exitDx=0;exitDy=0;" value="afecta a (Persona, Microbio)">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1330" y="760.06"/>
+                            <mxPoint x="1601.06" y="760.06"/>
+                        </Array>
+                        <mxPoint x="950" y="910" as="sourcePoint"/>
+                        <mxPoint x="1601" y="720" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

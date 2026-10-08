@@ -1,8 +1,6 @@
 /* **************************************************
  * Taller 7: Clase Gato (hereda de Mascota)
- * Sobrescribe los metodos de Mascota con la
- * revision y el diagnostico propios de un Gato.
- * @Author: Joshua Osorio Osorio
+ * @Author: J03 O^2
  * @Date:   Septiembre/2026
  * **************************************************/
 public class Gato extends Mascota {
@@ -10,7 +8,7 @@ public class Gato extends Mascota {
 	private boolean esDeInterior;
 
 	public Gato(String nombre, int edad, String raza, boolean esDeInterior) {
-		super(nombre, edad, raza); /* El constructor padre inicializa lo comun */
+		super(nombre, edad, raza);
 		this.esDeInterior = esDeInterior;
 	}
 
@@ -35,7 +33,6 @@ public class Gato extends Mascota {
 
 	@Override
 	public String toString() {
-		/* Reutiliza el toString del padre y agrega el dato propio */
 		return super.toString() + " | Interior: " + (esDeInterior ? "si" : "no") + "";
 	}
 

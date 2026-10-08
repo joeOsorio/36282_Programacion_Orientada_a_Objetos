@@ -5,7 +5,7 @@
  * depositar, retirar, eliminar cuenta e imprimir
  * recibo. El inicio de sesion lo resuelve la clase
  * Banco; el Cajero solo guarda la cuenta en turno.
- * @Author: Joshua Osorio Osorio
+ * @Author: J03 O^2
  * @Date:   Septiembre/2026
  * **************************************************/
 public class Cajero {

@@ -5,7 +5,7 @@ import java.util.Random;
  * Administra el arreglo de cuentas bancarias y
  * controla el login del super usuario (quien puede
  * abrir cuentas). El Banco NO es el main.
- * @Author: Joshua Osorio Osorio
+ * @Author: J03 O^2
  * @Date:   Septiembre/2026
  * **************************************************/
 public class Banco {
@@ -110,7 +110,9 @@ public class Banco {
 		return true;
 	}
 
-	/* *********************** Consulta (usada por el Cajero) ************************/
+	/*
+	 * *********************** Consulta (usada por el Cajero)
+	 ************************/
 	public CuentaBancaria buscarCuenta(int numeroCuenta) {
 		int indice = indiceCuentaPorNumero(numeroCuenta);
 		return indice == -1 ? null : cuentas[indice];

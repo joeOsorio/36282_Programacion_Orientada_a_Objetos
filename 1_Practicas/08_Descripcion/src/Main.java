@@ -1,4 +1,4 @@
-import java.util.InputMismatchException;  /* Para el manejo de errores en el try catch */
+import java.util.InputMismatchException; /* Para el manejo de errores en el try catch */
 import java.util.Scanner;
 
 /* ********************************************************************
@@ -7,7 +7,7 @@ import java.util.Scanner;
  * de cartas tipo Go Fish: revolver mazo, repartir cartas, agarrar
  * cartas del mazo, transferir cartas entre manos, mostrar mano al
  * dealer y contar cartas del mismo valor.
- * @Author: Joshua Osorio Osorio
+ * @Author: J03 O^2
  * @Date:   Septiembre/2026
  * ********************************************************************/
 public class Main {
@@ -28,7 +28,7 @@ public class Main {
 					System.out.println("Mazo revuelto.");
 					break;
 				case 2:
-					if (dealer.repartirCartas(new Mano[]{jugador1, jugador2}, 5)) {
+					if (dealer.repartirCartas(new Mano[] { jugador1, jugador2 }, 5)) {
 						System.out.println("Cartas repartidas (5 por jugador).");
 					}
 					break;
@@ -110,7 +110,8 @@ public class Main {
 		System.out.print("Valor a buscar (A,2-9,T=10,J,Q,K): ");
 		char valor = Character.toUpperCase(input.next().charAt(0));
 		int total = jugador.contarPorValor(valor);
-		System.out.println(jugador.getNombreJugador() + " tiene " + total + " carta(s) con valor " + Carta.nombreValor(valor) + ".");
+		System.out.println(jugador.getNombreJugador() + " tiene " + total + " carta(s) con valor "
+				+ Carta.nombreValor(valor) + ".");
 	}
 
 	static Mano elegirJugador() {
@@ -121,7 +122,7 @@ public class Main {
 
 	static void cargarDatosPrueba() {
 		dealer.revolverMazo();
-		dealer.repartirCartas(new Mano[]{jugador1, jugador2}, 5);
+		dealer.repartirCartas(new Mano[] { jugador1, jugador2 }, 5);
 		System.out.println("Datos de prueba cargados: mazo revuelto y 5 cartas repartidas a cada jugador.");
 	}
 
@@ -138,35 +139,39 @@ public class Main {
 		dealerPrueba.revolverMazo();
 		System.out.println("Mazo revuelto (el orden cambia, el tamano se mantiene en 52).");
 
-		boolean repartioOk = dealerPrueba.repartirCartas(new Mano[]{manoA, manoB}, 5);
+		boolean repartioOk = dealerPrueba.repartirCartas(new Mano[] { manoA, manoB }, 5);
 		System.out.println("Repartir 5 c/u -> " + (repartioOk ? "OK" : "FALLO")
-			+ " | manoA=" + manoA.getCantidad() + " manoB=" + manoB.getCantidad()
-			+ " | mazo restante (esperado 42)=" + dealerPrueba.getCartasDisponibles());
+				+ " | manoA=" + manoA.getCantidad() + " manoB=" + manoB.getCantidad()
+				+ " | mazo restante (esperado 42)=" + dealerPrueba.getCartasDisponibles());
 
 		Carta agarrada = dealerPrueba.agarrarCartaMazo();
 		manoA.agarrarCarta(agarrada);
 		System.out.println("Agarrar 1 carta del mazo a manoA -> OK, carta=" + agarrada
-			+ " | manoA=" + manoA.getCantidad() + " | mazo restante (esperado 41)=" + dealerPrueba.getCartasDisponibles());
+				+ " | manoA=" + manoA.getCantidad() + " | mazo restante (esperado 41)="
+				+ dealerPrueba.getCartasDisponibles());
 
 		boolean transOk = manoA.transferirCarta(0, manoB);
 		System.out.println("Transferir carta[0] de manoA a manoB -> " + (transOk ? "OK" : "FALLO")
-			+ " | manoA=" + manoA.getCantidad() + " manoB=" + manoB.getCantidad());
+				+ " | manoA=" + manoA.getCantidad() + " manoB=" + manoB.getCantidad());
 
 		boolean transInvalida = manoA.transferirCarta(99, manoB);
-		System.out.println("Transferir con indice invalido (99), deberia fallar -> " + (!transInvalida ? "OK (fallo esperado)" : "ERROR (no debio pasar)"));
+		System.out.println("Transferir con indice invalido (99), deberia fallar -> "
+				+ (!transInvalida ? "OK (fallo esperado)" : "ERROR (no debio pasar)"));
 
 		Mano manoC = new Mano("Prueba C");
 		Mano manoD = new Mano("Prueba D");
 		Dealer dealerPrueba2 = new Dealer();
-		dealerPrueba2.repartirCartas(new Mano[]{manoC}, 5);
-		int[] indicesDesordenados = {3, 0, 4};
+		dealerPrueba2.repartirCartas(new Mano[] { manoC }, 5);
+		int[] indicesDesordenados = { 3, 0, 4 };
 		int transferidas = manoC.transferirVariasCartas(indicesDesordenados, manoD);
 		System.out.println("Transferir varias cartas (indices desordenados 3,0,4) -> transferidas=" + transferidas
-			+ " (esperado 3) | manoC=" + manoC.getCantidad() + " (esperado 2) manoD=" + manoD.getCantidad() + " (esperado 3)");
+				+ " (esperado 3) | manoC=" + manoC.getCantidad() + " (esperado 2) manoD=" + manoD.getCantidad()
+				+ " (esperado 3)");
 
 		char valorPrueba = manoA.getCarta(0).getValor();
 		int conteo = manoA.contarPorValor(valorPrueba);
-		System.out.println("Contar valor " + Carta.nombreValor(valorPrueba) + " en manoA -> " + conteo + " (esperado >= 1)");
+		System.out.println(
+				"Contar valor " + Carta.nombreValor(valorPrueba) + " en manoA -> " + conteo + " (esperado >= 1)");
 
 		System.out.println("Mostrar mano al dealer:");
 		dealerPrueba.verMano(manoA);
@@ -176,9 +181,11 @@ public class Main {
 			dealerVacio.agarrarCartaMazo();
 		}
 		Carta debeSerNull = dealerVacio.agarrarCartaMazo();
-		System.out.println("Agarrar carta de mazo vacio, deberia dar null -> " + (debeSerNull == null ? "OK" : "ERROR"));
+		System.out
+				.println("Agarrar carta de mazo vacio, deberia dar null -> " + (debeSerNull == null ? "OK" : "ERROR"));
 
-		System.out.println("Mazo del juego real sigue intacto (no lo toco el test): " + dealer.getCartasDisponibles() + " cartas disponibles.");
+		System.out.println("Mazo del juego real sigue intacto (no lo toco el test): " + dealer.getCartasDisponibles()
+				+ " cartas disponibles.");
 
 		System.out.println("===== FIN DEL TEST =====\n");
 	}

@@ -3,7 +3,7 @@
  * Representa la mano de cartas de UN jugador. Arreglo de tamano fijo
  * (maximo 48 cartas segun la practica) + contador de cuantas 
  * tiene realmente en uso 
- * @Author: Joshua Osorio Osorio
+ * @Author: J03 O^2
  * @Date:   Septiembre/2026
  * ********************************************************************/
 public class Mano {

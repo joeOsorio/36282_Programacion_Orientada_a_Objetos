@@ -1,0 +1,225 @@
+<mxfile host="65bd71144e">
+    <diagram id="taller8-microbios" name="Microbios">
+        <mxGraphModel dx="1104" dy="2420" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2000" pageHeight="1500" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="main" parent="1" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" value="Main" vertex="1">
+                    <mxGeometry height="270" width="400" x="40" y="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="maina" parent="main" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="- input: Scanner {static}&lt;div&gt;- simulacion: Simulacion {static}&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="44" width="400" y="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="maind" parent="main" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+                    <mxGeometry height="8" width="400" y="99" as="geometry"/>
+                </mxCell>
+                <mxCell id="mainm" parent="main" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="+ main(String[]): void&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Menu&lt;/div&gt;&lt;div&gt;- iniciarSimulacion(): void&lt;/div&gt;&lt;div&gt;- test(): void&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Captura&lt;/div&gt;&lt;div&gt;- leerEntero(String): int&lt;/div&gt;&lt;div&gt;- leerTexto(String): String&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="163" width="400" y="107" as="geometry"/>
+                </mxCell>
+                <mxCell id="sim" parent="1" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" value="Simulacion" vertex="1">
+                    <mxGeometry height="423" width="400" x="40" y="330" as="geometry"/>
+                </mxCell>
+                <mxCell id="sima" parent="sim" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="- MAX_MICROBIOS: int = 4 {static, final}&lt;div&gt;- persona: Persona&lt;/div&gt;&lt;div&gt;- microbios: Microbio[4]&lt;/div&gt;&lt;div&gt;- contador: int&lt;/div&gt;&lt;div&gt;- turno: int&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="95" width="400" y="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="simd" parent="sim" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+                    <mxGeometry height="8" width="400" y="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="simm" parent="sim" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="+ Simulacion(Persona)&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Gestion de microbios&lt;/div&gt;&lt;div&gt;+ agregarMicrobio(Microbio): boolean&lt;/div&gt;&lt;div&gt;+ quedanMicrobios(): boolean&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Batalla&lt;/div&gt;&lt;div&gt;+ iniciar(): void&lt;/div&gt;&lt;div&gt;- ejecutarTurno(): void&lt;/div&gt;&lt;div&gt;- elegirOrgano(): Organo&lt;/div&gt;&lt;div&gt;- hayGanador(): boolean&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Informacion&lt;/div&gt;&lt;div&gt;+ mostrarEstado(): void&lt;/div&gt;&lt;div&gt;+ getTurno(): int&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="265" width="400" y="158" as="geometry"/>
+                </mxCell>
+                <mxCell id="per" parent="1" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" value="Persona" vertex="1">
+                    <mxGeometry height="576" width="420" x="460" y="-310" as="geometry"/>
+                </mxCell>
+                <mxCell id="pera" parent="per" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="- ENERGIA_INICIAL: int = 2048 {static, final}&lt;div&gt;- MAX_ORGANOS: int = 6 {static, final}&lt;/div&gt;&lt;div&gt;- nombre: String&lt;/div&gt;&lt;div&gt;- energia: int&lt;/div&gt;&lt;div&gt;- defensa: int&lt;/div&gt;&lt;div&gt;- turnosDefensa: int&lt;/div&gt;&lt;div&gt;- organos: Organo[6]&lt;/div&gt;&lt;div&gt;- contador: int&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="146" width="420" y="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="perd" parent="per" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+                    <mxGeometry height="8" width="420" y="201" as="geometry"/>
+                </mxCell>
+                <mxCell id="perm" parent="per" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="+ Persona(String nombre)&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Gestion de organos&lt;/div&gt;&lt;div&gt;+ agregarOrgano(Organo): boolean&lt;/div&gt;&lt;div&gt;+ getOrgano(int indice): Organo&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Combate&lt;/div&gt;&lt;div&gt;+ recibirAtaque(int danio): void&lt;/div&gt;&lt;div&gt;+ restaurarEnergia(int cantidad): void&lt;/div&gt;&lt;div&gt;+ aumentarDefensa(int cantidad, int turnos): void&lt;/div&gt;&lt;div&gt;+ actualizarTurno(): void&lt;/div&gt;&lt;div&gt;+ estaViva(): boolean&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Getters&lt;/div&gt;&lt;div&gt;+ getNombre(): String&lt;/div&gt;&lt;div&gt;+ getEnergia(): int&lt;/div&gt;&lt;div&gt;+ getDefensa(): int&lt;/div&gt;&lt;div&gt;+ getContador(): int&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Informacion&lt;/div&gt;&lt;div&gt;+ toString(): String&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="367" width="420" y="209" as="geometry"/>
+                </mxCell>
+                <mxCell id="mic" parent="1" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" value="Microbio" vertex="1">
+                    <mxGeometry height="559" width="420" x="1600" y="-220" as="geometry"/>
+                </mxCell>
+                <mxCell id="mica" parent="mic" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="- ENERGIA_INICIAL: int = 256 {static, final}&lt;div&gt;- ATAQUE: int = 40 {static, final}&lt;/div&gt;&lt;div&gt;- id: int&lt;/div&gt;&lt;div&gt;- energia: int&lt;/div&gt;&lt;div&gt;- defensa: int&lt;/div&gt;&lt;div&gt;- turnosDebilitado: int&lt;/div&gt;&lt;div&gt;- organoActual: Organo&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="129" width="420" y="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="micd" parent="mic" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+                    <mxGeometry height="8" width="420" y="184" as="geometry"/>
+                </mxCell>
+                <mxCell id="micm" parent="mic" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="+ Microbio(int id)&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Movimiento&lt;/div&gt;&lt;div&gt;+ saltar(Organo, Persona): void&lt;/div&gt;&lt;div&gt;+ atacar(Persona): void&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Combate&lt;/div&gt;&lt;div&gt;+ recibirDanio(int danio): void&lt;/div&gt;&lt;div&gt;+ restaurarEnergia(int cantidad): void&lt;/div&gt;&lt;div&gt;+ debilitar(int cantidad, int turnos): void&lt;/div&gt;&lt;div&gt;+ actualizarTurno(): void&lt;/div&gt;&lt;div&gt;+ estaVivo(): boolean&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Getters&lt;/div&gt;&lt;div&gt;+ getId(): int&lt;/div&gt;&lt;div&gt;+ getEnergia(): int&lt;/div&gt;&lt;div&gt;+ getDefensa(): int&lt;/div&gt;&lt;div&gt;+ getOrganoActual(): Organo&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Informacion&lt;/div&gt;&lt;div&gt;+ toString(): String&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="367" width="420" y="192" as="geometry"/>
+                </mxCell>
+                <mxCell id="org" parent="1" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" value="Organo" vertex="1">
+                    <mxGeometry height="287" width="420" x="760" y="620" as="geometry"/>
+                </mxCell>
+                <mxCell id="orga" parent="org" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="# nombre: String" vertex="1">
+                    <mxGeometry height="27" width="420" y="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="orgd" parent="org" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+                    <mxGeometry height="8" width="420" y="82" as="geometry"/>
+                </mxCell>
+                <mxCell id="orgm" parent="org" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="+ Organo(String nombre)&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Polimorfismo (version por defecto: no hace nada)&lt;/div&gt;&lt;div&gt;+ aplicarEfecto(Persona, Microbio): void&lt;/div&gt;&lt;div&gt;+ getDescripcion(): String&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Getters&lt;/div&gt;&lt;div&gt;+ getNombre(): String&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Informacion&lt;/div&gt;&lt;div&gt;+ toString(): String&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="197" width="420" y="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="cer" parent="1" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" value="Cerebro" vertex="1">
+                    <mxGeometry height="185" width="300" x="40" y="1020" as="geometry"/>
+                </mxCell>
+                <mxCell id="cera" parent="cer" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="- DEBILITA: int = 30 {static, final}&lt;div&gt;- TURNOS: int = 3 {static, final}&lt;/div&gt;&lt;div&gt;- RESTAURA: int = 32 {static, final}  // 2^5&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="61" width="300" y="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="cerd" parent="cer" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+                    <mxGeometry height="8" width="300" y="116" as="geometry"/>
+                </mxCell>
+                <mxCell id="cerm" parent="cer" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="+ Cerebro()&lt;div&gt;@Override + aplicarEfecto(Persona, Microbio): void&lt;/div&gt;&lt;div&gt;@Override + getDescripcion(): String&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="61" width="300" y="124" as="geometry"/>
+                </mxCell>
+                <mxCell id="cor" parent="1" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" value="Corazon" vertex="1">
+                    <mxGeometry height="168" width="300" x="370" y="1020" as="geometry"/>
+                </mxCell>
+                <mxCell id="cora" parent="cor" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="- DEFENSA: int = 30 {static, final}&lt;div&gt;- TURNOS: int = 3 {static, final}&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="44" width="300" y="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="cord" parent="cor" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+                    <mxGeometry height="8" width="300" y="99" as="geometry"/>
+                </mxCell>
+                <mxCell id="corm" parent="cor" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="+ Corazon()&lt;div&gt;@Override + aplicarEfecto(Persona, Microbio): void&lt;/div&gt;&lt;div&gt;@Override + getDescripcion(): String&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="61" width="300" y="107" as="geometry"/>
+                </mxCell>
+                <mxCell id="est" parent="1" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" value="Estomago" vertex="1">
+                    <mxGeometry height="151" width="300" x="700" y="1020" as="geometry"/>
+                </mxCell>
+                <mxCell id="esta" parent="est" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="- RESTAURA: int = 16 {static, final}  // 2^4" vertex="1">
+                    <mxGeometry height="27" width="300" y="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="estd" parent="est" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+                    <mxGeometry height="8" width="300" y="82" as="geometry"/>
+                </mxCell>
+                <mxCell id="estm" parent="est" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="+ Estomago()&lt;div&gt;@Override + aplicarEfecto(Persona, Microbio): void&lt;/div&gt;&lt;div&gt;@Override + getDescripcion(): String&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="61" width="300" y="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="pan" parent="1" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" value="Pancreas" vertex="1">
+                    <mxGeometry height="151" width="300" x="1030" y="1020" as="geometry"/>
+                </mxCell>
+                <mxCell id="pana" parent="pan" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="- PORCENTAJE: int = 50 {static, final}" vertex="1">
+                    <mxGeometry height="27" width="300" y="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="pand" parent="pan" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+                    <mxGeometry height="8" width="300" y="82" as="geometry"/>
+                </mxCell>
+                <mxCell id="panm" parent="pan" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="+ Pancreas()&lt;div&gt;@Override + aplicarEfecto(Persona, Microbio): void&lt;/div&gt;&lt;div&gt;@Override + getDescripcion(): String&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="61" width="300" y="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="rin" parent="1" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" value="Rinones" vertex="1">
+                    <mxGeometry height="151" width="300" x="1360" y="1020" as="geometry"/>
+                </mxCell>
+                <mxCell id="rina" parent="rin" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="- PORCENTAJE: int = 15 {static, final}" vertex="1">
+                    <mxGeometry height="27" width="300" y="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="rind" parent="rin" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+                    <mxGeometry height="8" width="300" y="82" as="geometry"/>
+                </mxCell>
+                <mxCell id="rinm" parent="rin" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="+ Rinones()&lt;div&gt;@Override + aplicarEfecto(Persona, Microbio): void&lt;/div&gt;&lt;div&gt;@Override + getDescripcion(): String&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="61" width="300" y="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="int" parent="1" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" value="Intestinos" vertex="1">
+                    <mxGeometry height="134" width="300" x="1690" y="1020" as="geometry"/>
+                </mxCell>
+                <mxCell id="inta" parent="int" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="(sin atributos propios)" vertex="1">
+                    <mxGeometry height="27" width="300" y="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="intd" parent="int" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+                    <mxGeometry height="8" width="300" y="82" as="geometry"/>
+                </mxCell>
+                <mxCell id="intm" parent="int" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="+ Intestinos()&lt;div&gt;@Override + getDescripcion(): String&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="44" width="300" y="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="legend" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=6;fontSize=12;fillColor=#FFF9E6;strokeColor=#999999;" value="&lt;b&gt;Leyenda&lt;/b&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;──▷&lt;/b&gt; (triangulo vacio) Herencia: los 6 organos SON un Organo y sobrescriben (@Override) sus metodos.&lt;/div&gt;&lt;div&gt;&lt;b&gt;◆──&lt;/b&gt; Composicion: Persona crea y contiene sus 6 organos; Simulacion crea a los 4 microbios.&lt;/div&gt;&lt;div&gt;&lt;b&gt;──&amp;gt;&lt;/b&gt; Asociacion: Simulacion conoce a la Persona; Microbio guarda el organo donde esta (organoActual).&lt;/div&gt;&lt;div&gt;&lt;b&gt;- - -&amp;gt;&lt;/b&gt; Dependencia: Organo NO guarda a nadie, solo recibe Persona y Microbio como parametros en aplicarEfecto().&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Sin clases abstractas:&lt;/b&gt; Organo es concreta y su aplicarEfecto() por defecto no hace nada. Intestinos lo hereda tal cual (no lo sobrescribe).&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Dynamic dispatching:&lt;/b&gt; Persona guarda un Organo[]; en Microbio.saltar() se llama organo.aplicarEfecto(persona, this) y Java decide EN TIEMPO DE EJECUCION si corre la version de Cerebro, Corazon, Estomago, etc.&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Turnos (saltos):&lt;/b&gt; si un efecto temporal ya esta activo, solo se refresca +1 turno.&lt;/div&gt;&lt;div&gt;# = protected&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="400" width="420" x="1240" y="560" as="geometry"/>
+                </mxCell>
+                <mxCell id="note" parent="1" style="shape=note;whiteSpace=wrap;html=1;size=14;align=left;verticalAlign=top;spacingLeft=8;spacingTop=4;fontSize=11;fontFamily=Courier New;fillColor=#F5F5F5;strokeColor=#999999;" value="&lt;b&gt;Ejemplo en Microbio.saltar(Organo o, Persona p):&lt;/b&gt;&lt;div&gt;organoActual = o;&lt;/div&gt;&lt;div&gt;atacar(p);            // siempre ataca&lt;/div&gt;&lt;div&gt;o.aplicarEfecto(p, this); // polimorfismo&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;Organo o = new Pancreas(); // upcasting&lt;/div&gt;&lt;div&gt;microbio.saltar(o, p); // ejecuta Pancreas.aplicarEfecto()&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="140" width="420" x="1240" y="629" as="geometry"/>
+                </mxCell>
+                <mxCell id="e1" edge="1" parent="1" source="mainm" style="rounded=0;html=1;startArrow=none;startFill=0;endArrow=open;endFill=0;endSize=10;fontSize=12;" target="sima" value="usa">
+                    <mxGeometry relative="1" x="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e2" edge="1" parent="1" source="sim" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=none;endArrow=open;endFill=0;endSize=10;fontSize=12;" target="per" value="enfrenta (1 -- 1)">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="500.06" y="490.06"/>
+                            <mxPoint x="500.06" y="327.94"/>
+                            <mxPoint x="579.94" y="327.94"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e3" edge="1" parent="1" source="sim" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=diamondThin;startFill=1;startSize=16;endArrow=none;fontSize=12;" target="mic" value="crea (1 -- 4)">
+                    <mxGeometry relative="1" x="0.0128" as="geometry">
+                        <mxPoint y="1" as="offset"/>
+                        <Array as="points">
+                            <mxPoint x="970" y="390"/>
+                            <mxPoint x="970" y="59.5"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e4" edge="1" parent="1" source="per" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=diamondThin;startFill=1;startSize=16;endArrow=none;fontSize=12;" target="org" value="contiene (1 -- 6)">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="750" y="443"/>
+                            <mxPoint x="970" y="443"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e5" edge="1" parent="1" source="mic" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=none;endArrow=open;endFill=0;endSize=10;fontSize=12;" target="org" value="viaja a (1 -- 0..1)">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1100" y="210"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e6" edge="1" parent="1" source="org" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;startArrow=none;endArrow=open;endFill=0;endSize=10;fontSize=12;" target="per" value="afecta a (Persona, Microbio)">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="970" y="530"/>
+                            <mxPoint x="670" y="530"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="h0" edge="1" parent="1" source="cer" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=none;endArrow=block;endFill=0;endSize=16;fontSize=12;" target="org" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="h1" edge="1" parent="1" source="cor" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=none;endArrow=block;endFill=0;endSize=16;fontSize=12;" target="org" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="h2" edge="1" parent="1" source="est" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=none;endArrow=block;endFill=0;endSize=16;fontSize=12;" target="org" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="h3" edge="1" parent="1" source="pan" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=none;endArrow=block;endFill=0;endSize=16;fontSize=12;" target="org" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="h4" edge="1" parent="1" source="rin" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=none;endArrow=block;endFill=0;endSize=16;fontSize=12;" target="org" value="">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1510" y="979.94"/>
+                            <mxPoint x="970" y="979.94"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="h5" edge="1" parent="1" source="int" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=none;endArrow=block;endFill=0;endSize=16;fontSize=12;" target="org" value="">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1840" y="989.94"/>
+                            <mxPoint x="970" y="989.94"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="en" edge="1" parent="1" source="note" style="endArrow=none;dashed=1;html=1;" target="micm" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

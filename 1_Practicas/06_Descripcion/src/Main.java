@@ -5,7 +5,7 @@ import java.util.Scanner;
  * Laboratorio 6: Programa principal
  * Orquesta la clase Veterinaria (que a su vez orquesta
  * a Doctor y Mascota). La Veterinaria NO es el main.
- * @Author: Joshua Osorio Osorio
+ * @Author: J03 O^2
  * @Date:   Septiembre/2026
  * **************************************************/
 public class Main {

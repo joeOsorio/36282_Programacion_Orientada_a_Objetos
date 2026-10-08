@@ -5,7 +5,7 @@
  * contratarlo) y nombre. Un mismo Empleado puede
  * pertenecer a varios Equipos (asociacion), pero solo
  * la Empresa lo crea y lo administra (composicion).
- * @Author: Joshua Osorio Osorio
+ * @Author: J03 O^2
  * @Date:   Septiembre/2026
  * **************************************************/
 public class Empleado {

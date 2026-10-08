@@ -4,7 +4,7 @@
  * cuenta. NO es dueno del Banco, solo lo consulta
  * para autenticar. Solo puede haber una sesion (una
  * cuenta) activa a la vez.
- * @Author: Joshua Osorio Osorio
+ * @Author: J03 O^2
  * @Date:   Septiembre/2026
  * **************************************************/
 

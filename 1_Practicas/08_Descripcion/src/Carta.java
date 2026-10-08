@@ -1,6 +1,6 @@
 /* ********************************************************************
  * Laboratorio 8: Clase Carta
- * @Author: Joshua Osorio Osorio
+ * @Author: J03 O^2
  * @Date:   Septiembre/2026
  * Comentarios:
  * Representa UNA carta individual de una baraja estandar (valor + palo).
@@ -11,8 +11,8 @@
 public class Carta {
 
 	// Dominio fijo de valores y palos. 'T' representa el 10.
-	public static final char[] VALORES = {'A', '2', '3', '4', '5', '6', '7', '8', '9', 'T', 'J', 'Q', 'K'};
-	public static final char[] PALOS = {'T', 'E', 'D', 'C'}; // Trebol, Espadas, Diamantes, Corazon
+	public static final char[] VALORES = { 'A', '2', '3', '4', '5', '6', '7', '8', '9', 'T', 'J', 'Q', 'K' };
+	public static final char[] PALOS = { 'T', 'E', 'D', 'C' }; // Trebol, Espadas, Diamantes, Corazon
 
 	private final char valor;
 	private final char palo;

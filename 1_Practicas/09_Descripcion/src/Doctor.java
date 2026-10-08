@@ -1,10 +1,7 @@
 /* **************************************************
  * Taller 7: Clase Doctor
  * Da consulta y diagnostico a CUALQUIER mascota.
- * Recibe el parametro como Mascota (tipo padre) y
- * gracias al dynamic dispatching se ejecuta el metodo
- * del animal real (Perro, Gato o Ave).
- * @Author: Joshua Osorio Osorio
+ * @Author: J03 O^2
  * @Date:   Septiembre/2026
  * **************************************************/
 public class Doctor {
@@ -20,8 +17,6 @@ public class Doctor {
 	/* *********************** Atencion (polimorfismo) ************************/
 	/*
 	 * Dependencia: el doctor NO guarda mascotas, solo las recibe como parametro.
-	 * Un solo metodo sirve para todos los animales, no hay que hacer un
-	 * darConsultaPerro(), darConsultaGato(), etc.
 	 */
 	public void darConsulta(Mascota mascota) {
 		if (mascota == null) {
@@ -41,7 +36,7 @@ public class Doctor {
 		mascota.setDiagnostico(mascota.generarDiagnostico());
 	}
 
-	/* Getters */
+	/* *********************** Getters ************************/
 	public String getNombre() {
 		return nombre;
 	}

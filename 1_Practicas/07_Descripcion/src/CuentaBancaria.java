@@ -3,7 +3,7 @@
  * Representa una cuenta bancaria individual: su
  * numero, titular, PIN y saldo, y las operaciones
  * basicas sobre el saldo.
- * @Author: Joshua Osorio Osorio
+ * @Author: J03 O^2
  * @Date:   Septiembre/2026
  * **************************************************/
 public class CuentaBancaria {

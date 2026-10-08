@@ -1,8 +1,6 @@
 /* **************************************************
  * Taller 7: Clase Ave (hereda de Mascota)
- * Sobrescribe los metodos de Mascota con la
- * revision y el diagnostico propios de un Ave.
- * @Author: Joshua Osorio Osorio
+ * @Author: J03 O^2
  * @Date:   Septiembre/2026
  * **************************************************/
 public class Ave extends Mascota {
@@ -10,10 +8,11 @@ public class Ave extends Mascota {
 	private boolean puedeVolar;
 
 	public Ave(String nombre, int edad, String raza, boolean puedeVolar) {
-		super(nombre, edad, raza); /* El constructor padre inicializa lo comun */
+		super(nombre, edad, raza);
 		this.puedeVolar = puedeVolar;
 	}
 
+	/* *********************** Sobrescritos (@Override) ************************/
 	/* *********************** Sobrescritos (@Override) ************************/
 	@Override
 	public String getTipo() {

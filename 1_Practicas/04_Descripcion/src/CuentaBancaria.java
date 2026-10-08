@@ -5,7 +5,7 @@ import java.util.Locale;
  * Representa una cuenta bancaria y su logica: numero
  * de cuenta, titular, saldo, depositos, retiros y
  * cierre (saldar) de la cuenta.
- * @Author: Joshua Osorio Osorio
+ * @Author: J03 O^2
  * @Date:   Septiembre/2026
  * **************************************************/
 public class CuentaBancaria {

@@ -4,7 +4,7 @@ import java.util.Scanner;
 /* **************************************************
  * Laboratorio 5: Programa principal 
  * Orquesta las clases Empresa, Empleado y Equipo.
- * @Author: Joshua Osorio Osorio
+ * @Author: J03 O^2
  * @Date:   Septiembre/2026
  * **************************************************/
 public class Main {

@@ -1,3 +1,4 @@
+
 /* ********************************************************************
  * Laboratorio 8: Clase Dealer
  * Lleva el control del juego: arma el mazo completo (52 cartas unicas,
@@ -5,15 +6,16 @@
  * revuelve, reparte cartas iniciales y administra que los jugadores
  * agarren cartas del mazo.
 
- * @Author: Joshua Osorio Osorio
+ * @Author: J03 O^2
  * @Date:   Septiembre/2026
  * ********************************************************************/
 import java.util.Random; /* Para utilizar randon en la reparticion y acomodo de las cartas */
+
 public class Dealer {
 
 	private Carta[] mazo;
 	private int cartasDisponibles; /* funciona como "indice tope": cuantas cartas quedan sin repartir */
-    
+
 	Dealer() {
 		this.mazo = new Carta[Carta.VALORES.length * Carta.PALOS.length];
 		int i = 0;
@@ -44,7 +46,7 @@ public class Dealer {
 		}
 		cartasDisponibles--;
 		Carta carta = mazo[cartasDisponibles];
-		mazo[cartasDisponibles] = null; /* Nos salimos  de mazo*/
+		mazo[cartasDisponibles] = null; /* Nos salimos de mazo */
 		return carta;
 	}
 

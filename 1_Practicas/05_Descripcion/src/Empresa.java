@@ -1,7 +1,7 @@
 /* **************************************************
  * Laboratorio 5: Clase Empresa
  * Administra los arreglos de empleados y equipos.
- * @Author: Joshua Osorio Osorio
+ * @Author: J03 O^2
  * @Date:   Septiembre/2026
  * **************************************************/
 public class Empresa {

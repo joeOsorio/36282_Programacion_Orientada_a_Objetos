@@ -1,9 +1,9 @@
 /* **************************************************
  * Taller 7: Clase Veterinaria
  * Registra hasta 50 mascotas de cualquier tipo en un
- * solo arreglo de Mascota (upcasting) y le pide a su
+ * solo arreglo de Mascota  y le pide a su
  * doctor que las consulte y diagnostique.
- * @Author: Joshua Osorio Osorio
+ * @Author: J03 O^2
  * @Date:   Septiembre/2026
  * **************************************************/
 public class Veterinaria {
@@ -12,7 +12,8 @@ public class Veterinaria {
 
 	/*
 	 * Agregacion: las mascotas se crean afuera (en el Main) y la Veterinaria solo
-	 * guarda la referencia. Un mismo arreglo de Mascota guarda Perros, Gatos y Aves.
+	 * guarda la referencia. Un mismo arreglo de Mascota guarda Perros, Gatos y
+	 * Aves.
 	 */
 	private Mascota[] mascotas;
 	private int contador;

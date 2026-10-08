@@ -8,7 +8,7 @@ import java.util.Scanner;
  * ya con sesion iniciada, el menu de operaciones del
  * cajero (depositar, retirar, eliminar cuenta, imprimir
  * recibo, salir).
- * @Author: Joshua Osorio Osorio
+ * @Author: J03 O^2
  * @Date:   Septiembre/2026
  * **************************************************/
 public class Main {
@@ -56,7 +56,7 @@ public class Main {
 
 		input.close();
 	}
-	
+
 	/* *********************** Inicio de sesion ************************/
 	private static void iniciarSesion() {
 		System.out.print("\nNumero de cuenta:\t");
@@ -85,7 +85,9 @@ public class Main {
 		}
 	}
 
-	/* *********************** Menu del cajero (con sesion activa) ************************/
+	/*
+	 * *********************** Menu del cajero (con sesion activa)
+	 ************************/
 	private static void menuCajero() {
 		int opcion;
 
@@ -148,7 +150,9 @@ public class Main {
 		}
 	}
 
-	/* *********************** Datos de prueba (para probar rapido) ************************/
+	/*
+	 * *********************** Datos de prueba (para probar rapido)
+	 ************************/
 	private static void cargarCuentasPrueba() {
 		banco.crearCuenta("Ana Torres", 1500);
 		banco.crearCuenta("Luis Perez", 500);
@@ -156,7 +160,9 @@ public class Main {
 		System.out.println("\nSe crearon 3 cuentas de prueba (numeros 1000, 1001 y 1002).");
 	}
 
-	/* *********************** Prueba automatica de todos los metodos ************************/
+	/*
+	 * *********************** Prueba automatica de todos los metodos
+	 ************************/
 	/*
 	 * Opcion oculta (no se imprime en el menu) para no ensuciar la interfaz
 	 * pensada para el usuario final. Usa un Banco y un Cajero de prueba
