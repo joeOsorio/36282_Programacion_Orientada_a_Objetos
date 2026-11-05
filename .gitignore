@@ -19,6 +19,7 @@
 
 # # --- Archivos de imágenes de disco ---
 # *.img
+# jdk-27_windows-x64_bin.exe
 
 # # --- Carpetas de salida / compilación ---
 # Presentacion/
@@ -29,9 +30,10 @@
 # Module.symvers
 
 # --- Java: clases compiladas ---
-*.class
-output/
-**/output/
+
+# *.class
+# output/
+# **/output/
 
 # # --- Archivos de depuración ---
 # *.stackdump
@@ -66,3 +68,4 @@ output/
 # *.mod*
 # *.cmd
 # dkms.conf
+0_Recursos/Apps/

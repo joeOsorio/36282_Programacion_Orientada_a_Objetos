@@ -1,7 +1,6 @@
 
 /* ********************************************************************
- * Laboratorio 8: Clase Dealer
- * Lleva el control del juego: arma el mazo completo (52 cartas unicas,
+ * Clase Dealer: Lleva el control del juego: arma el mazo completo (52 cartas unicas,
  * generadas a partir del dominio Carta.VALORES x Carta.PALOS), lo
  * revuelve, reparte cartas iniciales y administra que los jugadores
  * agarren cartas del mazo.

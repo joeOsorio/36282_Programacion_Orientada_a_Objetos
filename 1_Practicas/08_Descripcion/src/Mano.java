@@ -1,5 +1,5 @@
 /* ********************************************************************
- * Laboratorio 8: Clase Mano
+ * Laboratorio 8: Clase Mano las que les faltan.
  * Representa la mano de cartas de UN jugador. Arreglo de tamano fijo
  * (maximo 48 cartas segun la practica) + contador de cuantas 
  * tiene realmente en uso 

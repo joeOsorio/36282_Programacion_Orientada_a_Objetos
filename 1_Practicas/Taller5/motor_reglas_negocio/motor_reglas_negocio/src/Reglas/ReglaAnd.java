@@ -1,0 +1,30 @@
+package Reglas;
+import app.Orden;
+
+public class ReglaAnd implements Regla
+{
+    private Regla primera;
+    private Regla segunda;
+    public ReglaAnd(Regla a, Regla b)
+    {
+        primera = a;
+        segunda = b;
+    }
+
+
+    @Override
+    public boolean aplica(Orden o)
+    {
+        return (primera.aplica(o) && segunda.aplica(o));
+    }
+    @Override
+    public void ejecuta(Orden o)
+    {
+        primera.ejecuta(o);
+        segunda.ejecuta(o);
+    }
+    public String describe()
+    {
+        return String.format("{ %s AND %s }",primera.describe(),segunda.describe());
+    }
+}

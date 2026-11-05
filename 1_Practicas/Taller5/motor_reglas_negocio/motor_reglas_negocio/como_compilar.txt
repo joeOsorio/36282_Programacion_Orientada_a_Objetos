@@ -1,0 +1,2 @@
+javac -d build src/Orden.java src/Cliente.java src/Main.java
+java -cp build Main

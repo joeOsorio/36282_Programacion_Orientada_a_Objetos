@@ -13,7 +13,7 @@ public class Main {
 	/* Timestamps que pide don omar */
 	private static final long[] TIMESTAMPS = { 1800000000L, 10000000000L, 1791169430L };
 
-	/* Registros del enunciado */
+	/* Registros */
 	private static Registro[] registros = {
 			new Registro("110702", "Yuls", "Mi corazon"),
 			new Registro("060702", "Zaide", "Contabilidad"),
@@ -26,7 +26,7 @@ public class Main {
 			System.out.println("==================================================");
 			System.out.println("        LAB 10: HERENCIA Y POLIMORFISMO           ");
 			System.out.println("==================================================");
-			System.out.println("1 -\tEjercicio 1: fechas de los timestamps del enunciado");
+			System.out.println("1 -\tEjercicio 1: fechas de los timestamps");
 			System.out.println("2 -\tEjercicio 1: convertir un timestamp propio");
 			System.out.println("3 -\tEjercicio 2: exportar registros");
 			System.out.println("4 -\tSalir");
@@ -157,6 +157,6 @@ public class Main {
 	private static void probarFecha(long ts, String esperado) {
 		String obtenido = new Fecha(ts).formatear();
 		System.out.printf("%12d -> %s | esperado %s | %s%n", ts, obtenido, esperado,
-				obtenido.equals(esperado) ? "OK" : "FALLA");
+				obtenido.equals(esperado) ? "Si jala" : "FALLA");
 	}
 }

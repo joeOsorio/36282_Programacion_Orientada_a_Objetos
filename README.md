@@ -2,7 +2,7 @@
 
 Repositorio académico de la materia **Programación Orientada a Objetos** (clave 36282, grupo 541) de la carrera de **Ingeniería en Computación**, Facultad de Ciencias Químicas e Ingeniería, UABC. Semestre 2026-2.
 
-**Docente:** Gustavo Omar Zamarrón de la Garza
+**Docente:** GOZG
 
 ## 🎯 Objetivo
 Aplicar los principios de la programación orientada a objetos (abstracción, encapsulamiento, herencia, polimorfismo, persistencia y concurrencia) mediante talleres, laboratorios y un proyecto final en Java.

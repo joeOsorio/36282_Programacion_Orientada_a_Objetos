@@ -1,0 +1,394 @@
+<mxfile host="65bd71144e">
+    <diagram id="ej1" name="Ejercicio 1 - Lanzables">
+        <mxGraphModel dx="1991" dy="1252" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2000" pageHeight="1200" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="a_jug" parent="1" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" value="Jugador" vertex="1">
+                    <mxGeometry height="236" width="330" x="40" y="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="a_juga" parent="a_jug" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="- nombre: String" vertex="1">
+                    <mxGeometry height="27" width="330" y="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="a_jugd" parent="a_jug" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+                    <mxGeometry height="8" width="330" y="82" as="geometry"/>
+                </mxCell>
+                <mxCell id="a_jugm" parent="a_jug" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="+ Jugador(String nombre)&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Acciones (polimorfismo por interfaz)&lt;/div&gt;&lt;div&gt;+ aventar(ILanzable objeto): void&lt;/div&gt;&lt;div&gt;+ botar(IRebotable objeto): void&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Getters&lt;/div&gt;&lt;div&gt;+ getNombre(): String&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="146" width="330" y="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="a_ila" parent="1" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&amp;laquo;interface&amp;raquo;&lt;br&gt;ILanzable" vertex="1">
+                    <mxGeometry height="100" width="300" x="470" y="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="a_ilaa" parent="a_ila" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="" vertex="1">
+                    <mxGeometry height="10" width="300" y="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="a_ilad" parent="a_ila" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+                    <mxGeometry height="8" width="300" y="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="a_ilam" parent="a_ila" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="+ lanzar(): String" vertex="1">
+                    <mxGeometry height="27" width="300" y="73" as="geometry"/>
+                </mxCell>
+                <mxCell id="a_ire" parent="1" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&amp;laquo;interface&amp;raquo;&lt;br&gt;IRebotable" vertex="1">
+                    <mxGeometry height="100" width="300" x="1010" y="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="a_irea" parent="a_ire" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="" vertex="1">
+                    <mxGeometry height="10" width="300" y="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="a_ired" parent="a_ire" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+                    <mxGeometry height="8" width="300" y="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="a_irem" parent="a_ire" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="+ rebotar(): String" vertex="1">
+                    <mxGeometry height="27" width="300" y="73" as="geometry"/>
+                </mxCell>
+                <mxCell id="a_arr" parent="1" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" value="Arrojadizo" vertex="1">
+                    <mxGeometry height="287" width="380" x="430" y="300" as="geometry"/>
+                </mxCell>
+                <mxCell id="a_arra" parent="a_arr" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="# nombre: String&lt;div&gt;# peso: double&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="44" width="380" y="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="a_arrd" parent="a_arr" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+                    <mxGeometry height="8" width="380" y="99" as="geometry"/>
+                </mxCell>
+                <mxCell id="a_arrm" parent="a_arr" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="+ Arrojadizo(String nombre, double peso)&lt;div&gt;&lt;/div&gt;&lt;div&gt;// ILanzable&lt;/div&gt;&lt;div&gt;@Override&lt;/div&gt;&lt;div&gt;+ lanzar(): String&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Informacion&lt;/div&gt;&lt;div&gt;+ danio(): int&lt;/div&gt;&lt;div&gt;+ getDescripcion(): String&lt;/div&gt;&lt;div&gt;+ toString(): String&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="180" width="380" y="107" as="geometry"/>
+                </mxCell>
+                <mxCell id="a_pel" parent="1" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" value="Pelota" vertex="1">
+                    <mxGeometry height="236" width="340" x="40" y="720" as="geometry"/>
+                </mxCell>
+                <mxCell id="a_pela" parent="a_pel" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="- diametro: double" vertex="1">
+                    <mxGeometry height="27" width="340" y="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="a_peld" parent="a_pel" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+                    <mxGeometry height="8" width="340" y="82" as="geometry"/>
+                </mxCell>
+                <mxCell id="a_pelm" parent="a_pel" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="+ Pelota(double peso, double diametro)&lt;div&gt;&lt;/div&gt;&lt;div&gt;@Override&lt;/div&gt;&lt;div&gt;+ lanzar(): String&lt;/div&gt;&lt;div&gt;@Override&lt;/div&gt;&lt;div&gt;+ rebotar(): String&lt;/div&gt;&lt;div&gt;@Override&lt;/div&gt;&lt;div&gt;+ getDescripcion(): String&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="146" width="340" y="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="e1" edge="1" parent="1" source="a_pel" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=none;endArrow=block;endFill=0;endSize=14;fontSize=12;" target="a_arr" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e2" edge="1" parent="1" source="a_pel" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=none;endArrow=block;endFill=0;endSize=14;fontSize=12;dashed=1;" target="a_ire" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="a_bas" parent="1" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" value="Baseball" vertex="1">
+                    <mxGeometry height="236" width="340" x="410" y="720" as="geometry"/>
+                </mxCell>
+                <mxCell id="a_basa" parent="a_bas" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="- COSTURAS: int = 108 {static, final}" vertex="1">
+                    <mxGeometry height="27" width="340" y="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="a_basd" parent="a_bas" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+                    <mxGeometry height="8" width="340" y="82" as="geometry"/>
+                </mxCell>
+                <mxCell id="a_basm" parent="a_bas" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="+ Baseball(double peso)&lt;div&gt;&lt;/div&gt;&lt;div&gt;@Override&lt;/div&gt;&lt;div&gt;+ lanzar(): String&lt;/div&gt;&lt;div&gt;@Override&lt;/div&gt;&lt;div&gt;+ rebotar(): String&lt;/div&gt;&lt;div&gt;@Override&lt;/div&gt;&lt;div&gt;+ getDescripcion(): String&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="146" width="340" y="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="e3" edge="1" parent="1" source="a_bas" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=none;endArrow=block;endFill=0;endSize=14;fontSize=12;" target="a_arr" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e4" edge="1" parent="1" source="a_bas" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=none;endArrow=block;endFill=0;endSize=14;fontSize=12;dashed=1;" target="a_ire" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="a_bal" parent="1" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" value="BalonAmericano" vertex="1">
+                    <mxGeometry height="236" width="340" x="780" y="720" as="geometry"/>
+                </mxCell>
+                <mxCell id="a_bala" parent="a_bal" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="- largo: double" vertex="1">
+                    <mxGeometry height="27" width="340" y="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="a_bald" parent="a_bal" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+                    <mxGeometry height="8" width="340" y="82" as="geometry"/>
+                </mxCell>
+                <mxCell id="a_balm" parent="a_bal" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="+ BalonAmericano(double peso, double largo)&lt;div&gt;&lt;/div&gt;&lt;div&gt;@Override&lt;/div&gt;&lt;div&gt;+ lanzar(): String&lt;/div&gt;&lt;div&gt;@Override&lt;/div&gt;&lt;div&gt;+ rebotar(): String&lt;/div&gt;&lt;div&gt;@Override&lt;/div&gt;&lt;div&gt;+ getDescripcion(): String&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="146" width="340" y="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="e5" edge="1" parent="1" source="a_bal" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=none;endArrow=block;endFill=0;endSize=14;fontSize=12;" target="a_arr" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e6" edge="1" parent="1" source="a_bal" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=none;endArrow=block;endFill=0;endSize=14;fontSize=12;dashed=1;" target="a_ire" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="a_pie" parent="1" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" value="Piedra" vertex="1">
+                    <mxGeometry height="236" width="340" x="1150" y="720" as="geometry"/>
+                </mxCell>
+                <mxCell id="a_piea" parent="a_pie" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="- dureza: int" vertex="1">
+                    <mxGeometry height="27" width="340" y="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="a_pied" parent="a_pie" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+                    <mxGeometry height="8" width="340" y="82" as="geometry"/>
+                </mxCell>
+                <mxCell id="a_piem" parent="a_pie" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="+ Piedra(double peso, int dureza)&lt;div&gt;&lt;/div&gt;&lt;div&gt;@Override&lt;/div&gt;&lt;div&gt;+ lanzar(): String&lt;/div&gt;&lt;div&gt;@Override&lt;/div&gt;&lt;div&gt;+ danio(): int&lt;/div&gt;&lt;div&gt;@Override&lt;/div&gt;&lt;div&gt;+ getDescripcion(): String&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="146" width="340" y="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="e7" edge="1" parent="1" source="a_pie" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=none;endArrow=block;endFill=0;endSize=14;fontSize=12;" target="a_arr" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e8" edge="1" parent="1" source="a_arr" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=none;endArrow=block;endFill=0;endSize=14;fontSize=12;dashed=1;" target="a_ila" value="implementa">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e9" edge="1" parent="1" source="a_jugm" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;startArrow=none;endArrow=open;endFill=0;endSize=10;fontSize=12;" target="a_ila" value="avienta">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e10" edge="1" parent="1" source="a_jug" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;startArrow=none;endArrow=open;endFill=0;endSize=10;fontSize=12;" target="a_ire" value="bota">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="a_leg" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=4;fontSize=12;fillColor=#f5f5f5;strokeColor=#666666;" value="&lt;b&gt;Leyenda&lt;/b&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;Linea solida + triangulo vacio: herencia (extends).&lt;/div&gt;&lt;div&gt;Linea punteada + triangulo vacio: implementa una interfaz.&lt;/div&gt;&lt;div&gt;Linea punteada + flecha abierta: dependencia (Jugador&lt;/div&gt;&lt;div&gt;recibe el objeto por parametro, no lo guarda).&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;Todas son lanzables (heredan de Arrojadizo, que&lt;/div&gt;&lt;div&gt;implementa ILanzable). Solo Pelota, Baseball y&lt;/div&gt;&lt;div&gt;BalonAmericano implementan IRebotable: una Piedra&lt;/div&gt;&lt;div&gt;no se le puede pasar a Jugador.botar() -- lo impide&lt;/div&gt;&lt;div&gt;el compilador, no un boolean.&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="228" width="400" x="1560" y="40" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="ej2" name="Ejercicio 2 - POS Restaurantes">
+        <mxGraphModel dx="1908" dy="1200" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2800" pageHeight="2000" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="b_ipl" parent="1" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&amp;laquo;interface&amp;raquo;&lt;br&gt;IPlatillo" vertex="1">
+                    <mxGeometry height="134" width="320" x="1800" y="400" as="geometry"/>
+                </mxCell>
+                <mxCell id="b_ipla" parent="b_ipl" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="" vertex="1">
+                    <mxGeometry height="10" width="320" y="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="b_ipld" parent="b_ipl" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+                    <mxGeometry height="8" width="320" y="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="b_iplm" parent="b_ipl" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="+ getNombre(): String&lt;div&gt;+ getPrecio(): double&lt;/div&gt;&lt;div&gt;+ preparar(): String&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="61" width="320" y="73" as="geometry"/>
+                </mxCell>
+                <mxCell id="b_pla" parent="1" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" value="Platillo" vertex="1">
+                    <mxGeometry height="423" width="420" x="1300" y="760" as="geometry"/>
+                </mxCell>
+                <mxCell id="b_plaa" parent="b_pla" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="# nombre: String&lt;div&gt;# precio: double&lt;/div&gt;&lt;div&gt;# nombresToppings: String[4]&lt;/div&gt;&lt;div&gt;# toppings: boolean[4]&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="78" width="420" y="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="b_plad" parent="b_pla" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+                    <mxGeometry height="8" width="420" y="133" as="geometry"/>
+                </mxCell>
+                <mxCell id="b_plam" parent="b_pla" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="+ Platillo(String nombre, double precio, String[] nombresToppings, boolean incluidos)&lt;div&gt;&lt;/div&gt;&lt;div&gt;// IPlatillo&lt;/div&gt;&lt;div&gt;@Override&lt;/div&gt;&lt;div&gt;+ getNombre(): String&lt;/div&gt;&lt;div&gt;@Override&lt;/div&gt;&lt;div&gt;+ getPrecio(): double&lt;/div&gt;&lt;div&gt;@Override&lt;/div&gt;&lt;div&gt;+ preparar(): String&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Toppings&lt;/div&gt;&lt;div&gt;+ tieneTopping(int num): boolean&lt;/div&gt;&lt;div&gt;# cambiarTopping(int num, boolean valor): boolean&lt;/div&gt;&lt;div&gt;+ listarToppings(): String&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;+ toString(): String&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="282" width="420" y="141" as="geometry"/>
+                </mxCell>
+                <mxCell id="e11" edge="1" parent="1" source="b_pla" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=none;endArrow=block;endFill=0;endSize=14;fontSize=12;dashed=1;" target="b_ipl" value="implementa">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="b_ham" parent="1" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" value="Hamburguesa" vertex="1">
+                    <mxGeometry height="202" width="370" x="1080" y="1260" as="geometry"/>
+                </mxCell>
+                <mxCell id="b_hama" parent="b_ham" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="- TOPPINGS: String[] = {lechuga, tomate, pepinillos, cebolla} {static, final}&lt;div&gt;- PRECIO: double {static, final}&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="44" width="370" y="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="b_hamd" parent="b_ham" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+                    <mxGeometry height="8" width="370" y="99" as="geometry"/>
+                </mxCell>
+                <mxCell id="b_hamm" parent="b_ham" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="+ Hamburguesa()   // inicia SIN toppings&lt;div&gt;&lt;/div&gt;&lt;div&gt;// IAgregable&lt;/div&gt;&lt;div&gt;@Override&lt;/div&gt;&lt;div&gt;+ agregarTopping(int num): boolean&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="95" width="370" y="107" as="geometry"/>
+                </mxCell>
+                <mxCell id="e12" edge="1" parent="1" source="b_ham" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=none;endArrow=block;endFill=0;endSize=14;fontSize=12;" target="b_pla" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e13" edge="1" parent="1" source="b_ham" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=none;endArrow=block;endFill=0;endSize=14;fontSize=12;dashed=1;" target="b_iag" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="b_tor" parent="1" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" value="Torta" vertex="1">
+                    <mxGeometry height="202" width="370" x="1480" y="1260" as="geometry"/>
+                </mxCell>
+                <mxCell id="b_tora" parent="b_tor" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="- TOPPINGS: String[] = {lechuga, tomate, pepinillos, cebolla} {static, final}&lt;div&gt;- PRECIO: double {static, final}&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="44" width="370" y="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="b_tord" parent="b_tor" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+                    <mxGeometry height="8" width="370" y="99" as="geometry"/>
+                </mxCell>
+                <mxCell id="b_torm" parent="b_tor" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="+ Torta()   // inicia CON todos&lt;div&gt;&lt;/div&gt;&lt;div&gt;// IRemovible&lt;/div&gt;&lt;div&gt;@Override&lt;/div&gt;&lt;div&gt;+ quitarTopping(int num): boolean&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="95" width="370" y="107" as="geometry"/>
+                </mxCell>
+                <mxCell id="e14" edge="1" parent="1" source="b_tor" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=none;endArrow=block;endFill=0;endSize=14;fontSize=12;" target="b_pla" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e15" edge="1" parent="1" source="b_tor" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=none;endArrow=block;endFill=0;endSize=14;fontSize=12;dashed=1;" target="b_irm" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="b_tac" parent="1" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" value="Taco" vertex="1">
+                    <mxGeometry height="202" width="370" x="1880" y="1260" as="geometry"/>
+                </mxCell>
+                <mxCell id="b_taca" parent="b_tac" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="- TOPPINGS: String[] = {salsa, aguacate, cebolla, cilantro} {static, final}&lt;div&gt;- PRECIO: double {static, final}&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="44" width="370" y="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="b_tacd" parent="b_tac" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+                    <mxGeometry height="8" width="370" y="99" as="geometry"/>
+                </mxCell>
+                <mxCell id="b_tacm" parent="b_tac" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="+ Taco()   // inicia CON todos&lt;div&gt;&lt;/div&gt;&lt;div&gt;// IRemovible&lt;/div&gt;&lt;div&gt;@Override&lt;/div&gt;&lt;div&gt;+ quitarTopping(int num): boolean&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="95" width="370" y="107" as="geometry"/>
+                </mxCell>
+                <mxCell id="e16" edge="1" parent="1" source="b_tac" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=none;endArrow=block;endFill=0;endSize=14;fontSize=12;" target="b_pla" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e17" edge="1" parent="1" source="b_tac" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=none;endArrow=block;endFill=0;endSize=14;fontSize=12;dashed=1;" target="b_irm" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="b_iag" parent="1" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&amp;laquo;interface&amp;raquo;&lt;br&gt;IAgregable" vertex="1">
+                    <mxGeometry height="100" width="320" x="1180" y="1620" as="geometry"/>
+                </mxCell>
+                <mxCell id="b_iaga" parent="b_iag" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="" vertex="1">
+                    <mxGeometry height="10" width="320" y="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="b_iagd" parent="b_iag" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+                    <mxGeometry height="8" width="320" y="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="b_iagm" parent="b_iag" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="+ agregarTopping(int num): boolean" vertex="1">
+                    <mxGeometry height="27" width="320" y="73" as="geometry"/>
+                </mxCell>
+                <mxCell id="b_irm" parent="1" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&amp;laquo;interface&amp;raquo;&lt;br&gt;IRemovible" vertex="1">
+                    <mxGeometry height="100" width="320" x="1780" y="1620" as="geometry"/>
+                </mxCell>
+                <mxCell id="b_irma" parent="b_irm" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="" vertex="1">
+                    <mxGeometry height="10" width="320" y="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="b_irmd" parent="b_irm" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+                    <mxGeometry height="8" width="320" y="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="b_irmm" parent="b_irm" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="+ quitarTopping(int num): boolean" vertex="1">
+                    <mxGeometry height="27" width="320" y="73" as="geometry"/>
+                </mxCell>
+                <mxCell id="b_ord" parent="1" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" value="Orden" vertex="1">
+                    <mxGeometry height="338" width="380" x="1100" y="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="b_orda" parent="b_ord" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="- MAX_PLATILLOS: int = 10 {static, final}&lt;div&gt;- folio: int&lt;/div&gt;&lt;div&gt;- platillos: Platillo[10]&lt;/div&gt;&lt;div&gt;- contador: int&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="78" width="380" y="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="b_ordd" parent="b_ord" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+                    <mxGeometry height="8" width="380" y="133" as="geometry"/>
+                </mxCell>
+                <mxCell id="b_ordm" parent="b_ord" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="+ Orden(int folio)&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Gestion de platillos&lt;/div&gt;&lt;div&gt;+ agregarPlatillo(Platillo p): boolean&lt;/div&gt;&lt;div&gt;+ eliminarPlatillo(int indice): boolean&lt;/div&gt;&lt;div&gt;+ getPlatillo(int indice): Platillo&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Informacion&lt;/div&gt;&lt;div&gt;+ calcularTotal(): double&lt;/div&gt;&lt;div&gt;+ generarTicket(): String&lt;/div&gt;&lt;div&gt;+ getFolio(): int&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="197" width="380" y="141" as="geometry"/>
+                </mxCell>
+                <mxCell id="e18" edge="1" parent="1" source="b_ord" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=diamondThin;startFill=1;startSize=16;endArrow=none;fontSize=12;" target="b_pla" value="contiene (1 -- 0..10)">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="b_pos" parent="1" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" value="TerminalPOS" vertex="1">
+                    <mxGeometry height="372" width="440" x="560" y="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="b_posa" parent="b_pos" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="- restaurante: Restaurante&lt;div&gt;- ordenActual: Orden&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="44" width="440" y="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="b_posd" parent="b_pos" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+                    <mxGeometry height="8" width="440" y="99" as="geometry"/>
+                </mxCell>
+                <mxCell id="b_posm" parent="b_pos" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="+ TerminalPOS(Restaurante restaurante)&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Orden&lt;/div&gt;&lt;div&gt;+ nuevaOrden(): boolean&lt;/div&gt;&lt;div&gt;+ seleccionarPlatillo(int opcion): Platillo&lt;/div&gt;&lt;div&gt;+ cerrarOrden(): String&lt;/div&gt;&lt;div&gt;+ cancelarOrden(): void&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Toppings (segun la interfaz del platillo)&lt;/div&gt;&lt;div&gt;+ agregarTopping(Platillo p, int num): boolean&lt;/div&gt;&lt;div&gt;+ quitarTopping(Platillo p, int num): boolean&lt;/div&gt;&lt;div&gt;+ opcionesDe(Platillo p): String&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Getters&lt;/div&gt;&lt;div&gt;+ getOrdenActual(): Orden&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="265" width="440" y="107" as="geometry"/>
+                </mxCell>
+                <mxCell id="e19" edge="1" parent="1" source="b_pos" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=none;endArrow=open;endFill=0;endSize=10;fontSize=12;" target="b_ord" value="orden en curso (1 -- 0..1)">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e20" edge="1" parent="1" source="b_posm" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;startArrow=none;endArrow=open;endFill=0;endSize=10;fontSize=12;" target="b_iag" value="agrega (si es IAgregable)">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e21" edge="1" parent="1" source="b_posm" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;startArrow=none;endArrow=open;endFill=0;endSize=10;fontSize=12;" target="b_irm" value="quita (si es IRemovible)">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="2080" y="279.5"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="b_res" parent="1" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" value="Restaurante" vertex="1">
+                    <mxGeometry height="389" width="420" x="40" y="560" as="geometry"/>
+                </mxCell>
+                <mxCell id="b_resa" parent="b_res" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="- MAX_ORDENES: int = 50 {static, final}&lt;div&gt;# nombre: String&lt;/div&gt;&lt;div&gt;# ordenes: Orden[50]&lt;/div&gt;&lt;div&gt;# contador: int&lt;/div&gt;&lt;div&gt;# siguienteFolio: int&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="95" width="420" y="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="b_resd" parent="b_res" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+                    <mxGeometry height="8" width="420" y="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="b_resm" parent="b_res" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="+ Restaurante(String nombre)&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Menu (lo redefine cada restaurante)&lt;/div&gt;&lt;div&gt;+ getMenu(): String&lt;/div&gt;&lt;div&gt;+ crearPlatillo(int opcion): Platillo&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Gestion de ordenes&lt;/div&gt;&lt;div&gt;+ abrirOrden(): Orden&lt;/div&gt;&lt;div&gt;+ registrarOrden(Orden o): boolean&lt;/div&gt;&lt;div&gt;+ calcularVentas(): double&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Getters&lt;/div&gt;&lt;div&gt;+ getNombre(): String&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="231" width="420" y="158" as="geometry"/>
+                </mxCell>
+                <mxCell id="b_hmb" parent="1" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" value="Hamburgueseria" vertex="1">
+                    <mxGeometry height="202" width="310" x="40" y="1260" as="geometry"/>
+                </mxCell>
+                <mxCell id="b_hmba" parent="b_hmb" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="" vertex="1">
+                    <mxGeometry height="10" width="310" y="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="b_hmbd" parent="b_hmb" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+                    <mxGeometry height="8" width="310" y="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="b_hmbm" parent="b_hmb" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="+ Hamburgueseria(String nombre)&lt;div&gt;&lt;/div&gt;&lt;div&gt;@Override&lt;/div&gt;&lt;div&gt;+ getMenu(): String&lt;/div&gt;&lt;div&gt;@Override&lt;/div&gt;&lt;div&gt;+ crearPlatillo(int opcion): Platillo&lt;/div&gt;&lt;div&gt;   // regresa un {pl} (upcasting)&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="129" width="310" y="73" as="geometry"/>
+                </mxCell>
+                <mxCell id="e22" edge="1" parent="1" source="b_hmb" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=none;endArrow=block;endFill=0;endSize=14;fontSize=12;" target="b_res" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="b_trt" parent="1" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" value="Torteria" vertex="1">
+                    <mxGeometry height="202" width="310" x="370" y="1260" as="geometry"/>
+                </mxCell>
+                <mxCell id="b_trta" parent="b_trt" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="" vertex="1">
+                    <mxGeometry height="10" width="310" y="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="b_trtd" parent="b_trt" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+                    <mxGeometry height="8" width="310" y="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="b_trtm" parent="b_trt" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="+ Torteria(String nombre)&lt;div&gt;&lt;/div&gt;&lt;div&gt;@Override&lt;/div&gt;&lt;div&gt;+ getMenu(): String&lt;/div&gt;&lt;div&gt;@Override&lt;/div&gt;&lt;div&gt;+ crearPlatillo(int opcion): Platillo&lt;/div&gt;&lt;div&gt;   // regresa un {pl} (upcasting)&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="129" width="310" y="73" as="geometry"/>
+                </mxCell>
+                <mxCell id="e23" edge="1" parent="1" source="b_trt" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=none;endArrow=block;endFill=0;endSize=14;fontSize=12;" target="b_res" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="b_tqr" parent="1" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" value="Taqueria" vertex="1">
+                    <mxGeometry height="202" width="310" x="700" y="1260" as="geometry"/>
+                </mxCell>
+                <mxCell id="b_tqra" parent="b_tqr" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="" vertex="1">
+                    <mxGeometry height="10" width="310" y="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="b_tqrd" parent="b_tqr" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+                    <mxGeometry height="8" width="310" y="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="b_tqrm" parent="b_tqr" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="+ Taqueria(String nombre)&lt;div&gt;&lt;/div&gt;&lt;div&gt;@Override&lt;/div&gt;&lt;div&gt;+ getMenu(): String&lt;/div&gt;&lt;div&gt;@Override&lt;/div&gt;&lt;div&gt;+ crearPlatillo(int opcion): Platillo&lt;/div&gt;&lt;div&gt;   // regresa un {pl} (upcasting)&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="129" width="310" y="73" as="geometry"/>
+                </mxCell>
+                <mxCell id="e24" edge="1" parent="1" source="b_tqr" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=none;endArrow=block;endFill=0;endSize=14;fontSize=12;" target="b_res" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e25" edge="1" parent="1" source="b_res" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=diamondThin;startFill=1;startSize=16;endArrow=none;fontSize=12;" target="b_ord" value="registra (1 -- 0..50)">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e26" edge="1" parent="1" source="b_resm" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;startArrow=none;endArrow=open;endFill=0;endSize=10;fontSize=12;" target="b_pla" value="crea">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e27" edge="1" parent="1" source="b_posa" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=none;endArrow=open;endFill=0;endSize=10;fontSize=12;" target="b_res" value="atiende (1 -- 1)">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="b_cad" parent="1" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" value="CadenaRestaurantes" vertex="1">
+                    <mxGeometry height="304" width="440" x="40" y="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="b_cada" parent="b_cad" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="- MAX_RESTAURANTES: int = 3 {static, final}&lt;div&gt;- nombre: String&lt;/div&gt;&lt;div&gt;- restaurantes: Restaurante[3]&lt;/div&gt;&lt;div&gt;- contador: int&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="78" width="440" y="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="b_cadd" parent="b_cad" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+                    <mxGeometry height="8" width="440" y="133" as="geometry"/>
+                </mxCell>
+                <mxCell id="b_cadm" parent="b_cad" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="+ CadenaRestaurantes(String nombre)&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Gestion de restaurantes&lt;/div&gt;&lt;div&gt;+ agregarRestaurante(Restaurante r): boolean&lt;/div&gt;&lt;div&gt;+ getRestaurante(int indice): Restaurante&lt;/div&gt;&lt;div&gt;+ listarRestaurantes(): String&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Informacion&lt;/div&gt;&lt;div&gt;+ calcularVentasTotales(): double&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="163" width="440" y="141" as="geometry"/>
+                </mxCell>
+                <mxCell id="e28" edge="1" parent="1" source="b_cad" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=diamondThin;startFill=1;startSize=16;endArrow=none;fontSize=12;" target="b_res" value="tiene (1 -- 3)">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="b_main" parent="1" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" value="Main" vertex="1">
+                    <mxGeometry height="321" width="440" x="40" y="1580" as="geometry"/>
+                </mxCell>
+                <mxCell id="b_maina" parent="b_main" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="- input: Scanner {static}&lt;div&gt;- cadena: CadenaRestaurantes {static}&lt;/div&gt;&lt;div&gt;- pos: TerminalPOS {static}&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="61" width="440" y="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="b_maind" parent="b_main" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+                    <mxGeometry height="8" width="440" y="116" as="geometry"/>
+                </mxCell>
+                <mxCell id="b_mainm" parent="b_main" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="+ main(String[] args): void&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Menu&lt;/div&gt;&lt;div&gt;- elegirRestaurante(): void&lt;/div&gt;&lt;div&gt;- tomarOrden(): void&lt;/div&gt;&lt;div&gt;- editarToppings(Platillo p): void&lt;/div&gt;&lt;div&gt;- cargarDatosPrueba(): void&lt;/div&gt;&lt;div&gt;- test(): void   // opcion oculta&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Captura&lt;/div&gt;&lt;div&gt;- leerEntero(String msg): int&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="197" width="440" y="124" as="geometry"/>
+                </mxCell>
+                <mxCell id="e29" edge="1" parent="1" source="b_main" style="rounded=0;html=1;startArrow=none;startFill=0;endArrow=open;endFill=0;endSize=10;fontSize=12;" target="b_cad" value="usa">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e30" edge="1" parent="1" source="b_mainm" style="rounded=0;html=1;startArrow=none;startFill=0;endArrow=open;endFill=0;endSize=10;fontSize=12;" target="b_pos" value="usa">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="b_leg" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=4;fontSize=12;fillColor=#f5f5f5;strokeColor=#666666;" value="&lt;b&gt;Leyenda&lt;/b&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;Solida + triangulo vacio: herencia (extends).&lt;/div&gt;&lt;div&gt;Punteada + triangulo vacio: implementa interfaz.&lt;/div&gt;&lt;div&gt;Punteada + flecha abierta: dependencia (parametro).&lt;/div&gt;&lt;div&gt;Flecha abierta solida: asociacion.&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;El POS (tipo telefono) revisa la interfaz del platillo:&lt;/div&gt;&lt;div&gt;Hamburguesa es IAgregable (empieza vacia y se le&lt;/div&gt;&lt;div&gt;agregan toppings); Torta y Taco son IRemovible&lt;/div&gt;&lt;div&gt;(empiezan con todo y se les quitan).&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;Herencia de Restaurante: cada restaurante redefine&lt;/div&gt;&lt;div&gt;crearPlatillo() y regresa su platillo como Platillo.&lt;/div&gt;&lt;div&gt;Diamante relleno: composicion (Cadena crea sus 3&lt;/div&gt;&lt;div&gt;restaurantes, Restaurante sus ordenes, Orden sus&lt;/div&gt;&lt;div&gt;platillos).&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="313" width="420" x="2320" y="40" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
