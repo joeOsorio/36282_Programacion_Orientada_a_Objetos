@@ -1,35 +1,16 @@
 {
-  // Use IntelliSense para saber los atributos posibles.
-  // Mantenga el puntero para ver las descripciones de los existentes atributos.
-  // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
+  // Configuraciones de depuracion (F5) para las practicas.
+  // Se quitaron "Main", "ProgramaLibreria" y "Veterinaria": apuntaban a
+  // projectName con hash viejos (36282_..._21dc808a / _cc8e42b5) que VS Code
+  // genero automaticamente y ya no corresponden a ninguna carpeta.
   "version": "0.2.0",
   "configurations": [
     {
       "type": "java",
-      "name": "Main",
+      "name": "Ejecutar archivo actual",
       "request": "launch",
-      "mainClass": "Main",
-      "projectName": "36282_Programacion_Orientada_a_Objetos_21dc808a"
-    },
-    {
-      "type": "java",
-      "name": "ProgramaLibreria",
-      "request": "launch",
-      "mainClass": "ProgramaLibreria",
-      "projectName": "36282_Programacion_Orientada_a_Objetos_cc8e42b5"
-    },
-    {
-      "type": "java",
-      "name": "Veterinaria",
-      "request": "launch",
-      "mainClass": "Veterinaria",
-      "projectName": "36282_Programacion_Orientada_a_Objetos_cc8e42b5"
-    },
-    {
-      "type": "java",
-      "name": "Current File",
-      "request": "launch",
-      "mainClass": "${file}"
+      "mainClass": "${file}",
+      "console": "integratedTerminal"
     },
     {
       "type": "java",

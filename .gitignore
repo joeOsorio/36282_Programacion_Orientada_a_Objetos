@@ -1,71 +1,25 @@
-# # --- Archivos binarios y objetos generados por compilación ---
-# *.o
-# *.obj
-# *.exe
-# *.out
-# *.a
-# *.so
-# *.dll
-# *.dylib
-# *.ko
-# *.elf
-# *.lib
-# *.la
-# *.lo
-# *.i*86
-# *.x86_64
-# *.hex
-# *.app
+# ****************************************************************
+# .gitignore - 36282 Programacion Orientada a Objetos
+# ****************************************************************
 
-# # --- Archivos de imágenes de disco ---
-# *.img
-# jdk-27_windows-x64_bin.exe
+# --- Java: clases compiladas y carpetas de salida ---
+*.class
+output/
+build/
+bin/
 
-# # --- Carpetas de salida / compilación ---
-# Presentacion/
-# bin/
-# build/
-# dist/
-# .tmp_versions/
-# Module.symvers
+# --- Conversiones temporales de PDF a Markdown (solo para leerlos con IA) ---
+markit_output/
 
-# --- Java: clases compiladas ---
+# --- Instalador del JDK (pesa ~200 MB) ---
+0_Recursos/04_Apps/
 
-# *.class
-# output/
-# **/output/
+# --- Archivos del sistema ---
+.DS_Store
+Thumbs.db
+desktop.ini
 
-# # --- Archivos de depuración ---
-# *.stackdump
-# *.core
-# *.pdb
-# *.dSYM/
-# *.su
-# *.idb
-# *.dwo
-
-# # --- Archivos intermedios / temporales ---
-# *.tmp
-# *.temp
-# *.log
-# *.bak
-# *.old
-# Mkfile.old
-
-# # --- Archivos generados por el sistema ---
-# .DS_Store
-# Thumbs.db
-# ehthumbs.db
-# desktop.ini
-
-# # --- Configuraciones locales de VSCode (opcional) ---
-# # .vscode/
-# # !.vscode/settings.json
-# # !.vscode/tasks.json
-# # !.vscode/launch.json
-
-# # --- Kernel Module Compile Results ---
-# *.mod*
-# *.cmd
-# dkms.conf
-0_Recursos/Apps/
+# --- Temporales ---
+*.tmp
+*.bak
+~$*.docx
