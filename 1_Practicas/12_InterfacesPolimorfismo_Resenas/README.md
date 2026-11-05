@@ -38,7 +38,6 @@ java "-Dstdout.encoding=UTF-8" -cp output Main
 ```
 
 ## Qué se entregó
-- `docs/UML.drawio`: diagrama de clases
 - Código en `src/`
 
 ## Notas: cómo se resolvió
