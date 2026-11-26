@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram name="Proyecto Final - Despensa" id="despensa">
-        <mxGraphModel dx="2415" dy="1077" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="2400" pageHeight="3200" math="0" shadow="0">
+        <mxGraphModel dx="2868" dy="1293" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="2400" pageHeight="3200" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -29,7 +29,7 @@
                     <mxGeometry height="182" width="420" y="143" as="geometry"/>
                 </mxCell>
                 <mxCell id="hilo" parent="1" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" value="HiloCaducidad" vertex="1">
-                    <mxGeometry height="529" width="400" x="40" y="880" as="geometry"/>
+                    <mxGeometry height="529" width="400" x="25" y="812" as="geometry"/>
                 </mxCell>
                 <mxCell id="hiloa" parent="hilo" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="- despensa: Despensa {final}&lt;div&gt;- intervaloSeg: int {final}&lt;/div&gt;&lt;div&gt;- diasAviso: int {final}&lt;/div&gt;&lt;div&gt;- activo: boolean {volatile}&lt;/div&gt;&lt;div&gt;- hilo: Thread&lt;/div&gt;&lt;div&gt;- avisos: Lista&amp;lt;String&amp;gt;&lt;/div&gt;&lt;div&gt;- ultimaFirma: String&lt;/div&gt;&lt;div&gt;- hayNuevos: boolean&lt;/div&gt;&lt;div&gt;- revisiones: int&lt;/div&gt;" vertex="1">
                     <mxGeometry height="165" width="400" y="55" as="geometry"/>
@@ -41,7 +41,7 @@
                     <mxGeometry height="301" width="400" y="228" as="geometry"/>
                 </mxCell>
                 <mxCell id="runnable" parent="1" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" value="&lt;b&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;/b&gt;&lt;br&gt;Runnable (java.lang)" vertex="1">
-                    <mxGeometry height="118" width="260" x="40" y="680" as="geometry"/>
+                    <mxGeometry height="118" width="260" x="310" y="580" as="geometry"/>
                 </mxCell>
                 <mxCell id="runnablea" parent="runnable" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="" vertex="1">
                     <mxGeometry height="26" width="260" y="55" as="geometry"/>
@@ -89,7 +89,7 @@
                     <mxGeometry height="233" width="440" y="92" as="geometry"/>
                 </mxCell>
                 <mxCell id="iguard" parent="1" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" value="&lt;b&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;/b&gt;&lt;br&gt;IGuardable" vertex="1">
-                    <mxGeometry height="121" width="400" x="1000" y="2010" as="geometry"/>
+                    <mxGeometry height="121" width="400" x="1000" y="2020" as="geometry"/>
                 </mxCell>
                 <mxCell id="iguarda" parent="iguard" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="+ SEPARADOR: String = &amp;quot;;&amp;quot; {static, final}" vertex="1">
                     <mxGeometry height="29" width="400" y="55" as="geometry"/>
@@ -113,16 +113,16 @@
                     <mxGeometry height="437" width="400" y="143" as="geometry"/>
                 </mxCell>
                 <mxCell id="unidad" parent="1" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" value="&lt;b&gt;&amp;lt;&amp;lt;enum&amp;gt;&amp;gt;&lt;/b&gt;&lt;br&gt;Unidad" vertex="1">
-                    <mxGeometry height="206" width="340" x="1000" y="1666" as="geometry"/>
+                    <mxGeometry height="206" width="400" x="1000" y="1666" as="geometry"/>
                 </mxCell>
                 <mxCell id="unidada" parent="unidad" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="PIEZA(&amp;quot;pz&amp;quot;)&lt;div&gt;KG(&amp;quot;kg&amp;quot;)&lt;/div&gt;&lt;div&gt;LITRO(&amp;quot;L&amp;quot;)&lt;/div&gt;&lt;div&gt;PAQUETE(&amp;quot;paq&amp;quot;)&lt;/div&gt;&lt;div&gt;- abreviatura: String {final}&lt;/div&gt;" vertex="1">
-                    <mxGeometry height="97" width="340" y="55" as="geometry"/>
+                    <mxGeometry height="97" width="400" y="55" as="geometry"/>
                 </mxCell>
                 <mxCell id="unidadd" parent="unidad" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
-                    <mxGeometry height="8" width="340" y="152" as="geometry"/>
+                    <mxGeometry height="8" width="400" y="152" as="geometry"/>
                 </mxCell>
                 <mxCell id="unidadm" parent="unidad" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="+ getAbreviatura(): String&lt;div&gt;+ desdeTexto(texto: String): Unidad {static}&lt;/div&gt;" vertex="1">
-                    <mxGeometry height="46" width="340" y="160" as="geometry"/>
+                    <mxGeometry height="46" width="400" y="160" as="geometry"/>
                 </mxCell>
                 <mxCell id="pere" parent="1" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" value="Perecedero" vertex="1">
                     <mxGeometry height="427" width="420" x="40" y="2356" as="geometry"/>
@@ -185,28 +185,54 @@
                     <mxGeometry height="29" width="360" y="126" as="geometry"/>
                 </mxCell>
                 <mxCell id="e1" edge="1" parent="1" source="main" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=12;labelBackgroundColor=default;startArrow=none;endArrow=open;endFill=0;endSize=10;" target="despensa" value="usa (1 -- 1)">
-                    <mxGeometry relative="1" as="geometry"/>
+                    <mxGeometry relative="1" x="-0.1174" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="860" y="826.5"/>
+                            <mxPoint x="720" y="826.5"/>
+                        </Array>
+                    </mxGeometry>
                 </mxCell>
                 <mxCell id="e2" edge="1" parent="1" source="main" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=12;labelBackgroundColor=default;startArrow=none;endArrow=open;endFill=0;endSize=10;" target="lsuper" value="usa (1 -- 1)">
-                    <mxGeometry relative="1" as="geometry"/>
+                    <mxGeometry relative="1" x="-0.0749" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="920" y="826.5"/>
+                            <mxPoint x="1200" y="826.5"/>
+                        </Array>
+                    </mxGeometry>
                 </mxCell>
-                <mxCell id="e3" edge="1" parent="1" source="main" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=12;labelBackgroundColor=default;startArrow=none;endArrow=open;endFill=0;endSize=10;" target="hilo" value="inicia / detiene (1 -- 1)">
+                <mxCell id="e3" edge="1" parent="1" source="main" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=12;labelBackgroundColor=default;startArrow=none;endArrow=open;endFill=0;endSize=10;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="hilo" value="inicia / detiene (1 -- 1)">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="e4" edge="1" parent="1" source="main" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=12;labelBackgroundColor=default;dashed=1;startArrow=none;endArrow=open;endFill=0;endSize=10;" target="gestor" value="guarda / carga">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="e5" edge="1" parent="1" source="main" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=12;labelBackgroundColor=default;dashed=1;startArrow=none;endArrow=open;endFill=0;endSize=10;" target="consola" value="imprime con">
-                    <mxGeometry relative="1" as="geometry"/>
+                    <mxGeometry relative="1" x="-0.127" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1200" y="370"/>
+                            <mxPoint x="1200" y="202.5"/>
+                        </Array>
+                    </mxGeometry>
                 </mxCell>
                 <mxCell id="e6" edge="1" parent="1" source="hilo" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=12;labelBackgroundColor=default;startArrow=none;endArrow=open;endFill=0;endSize=10;" target="despensa" value="vigila (1 -- 1)">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="e7" edge="1" parent="1" source="hilo" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=12;labelBackgroundColor=default;dashed=1;startArrow=none;endArrow=block;endFill=0;endSize=14;" target="runnable" value="implementa">
-                    <mxGeometry relative="1" as="geometry"/>
+                    <mxGeometry relative="1" x="-0.1136" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="280" y="760"/>
+                            <mxPoint x="450" y="760"/>
+                        </Array>
+                    </mxGeometry>
                 </mxCell>
                 <mxCell id="e8" edge="1" parent="1" source="despensa" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=12;labelBackgroundColor=default;startArrow=diamondThin;startFill=0;startSize=16;endArrow=none;" target="producto" value="guarda (1 -- 0..*)">
-                    <mxGeometry relative="1" as="geometry"/>
+                    <mxGeometry relative="1" x="0.0574" y="-50" as="geometry">
+                        <mxPoint as="offset"/>
+                        <Array as="points">
+                            <mxPoint x="720" y="1440"/>
+                            <mxPoint x="680" y="1440"/>
+                        </Array>
+                    </mxGeometry>
                 </mxCell>
                 <mxCell id="e9" edge="1" parent="1" source="despensa" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=12;labelBackgroundColor=default;startArrow=diamondThin;startFill=1;startSize=16;endArrow=none;" target="lista" value="productos (1 -- 1)">
                     <mxGeometry relative="1" x="0.0012" as="geometry">
@@ -218,52 +244,83 @@
                 <mxCell id="e10" edge="1" parent="1" source="lsuper" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=12;labelBackgroundColor=default;dashed=1;startArrow=none;endArrow=open;endFill=0;endSize=10;" target="despensa" value="generar(despensa)">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="e11" edge="1" parent="1" source="lsuper" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=12;labelBackgroundColor=default;startArrow=none;endArrow=open;endFill=0;endSize=10;" target="producto" value="pendientes (1 -- 0..*)">
-                    <mxGeometry relative="1" as="geometry"/>
+                <mxCell id="e11" edge="1" parent="1" source="lsuper" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=12;labelBackgroundColor=default;startArrow=none;endArrow=open;endFill=0;endSize=10;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="producto" value="pendientes (1 -- 0..*)">
+                    <mxGeometry relative="1" x="0.0011" as="geometry"/>
                 </mxCell>
-                <mxCell id="e12" edge="1" parent="1" source="gestor" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=12;labelBackgroundColor=default;dashed=1;startArrow=none;endArrow=open;endFill=0;endSize=10;" target="despensa" value="guarda / carga">
-                    <mxGeometry relative="1" as="geometry"/>
+                <mxCell id="e12" edge="1" parent="1" source="gestor" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=12;labelBackgroundColor=default;dashed=1;startArrow=none;endArrow=open;endFill=0;endSize=10;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" target="despensa" value="guarda / carga">
+                    <mxGeometry relative="1" x="0.2992" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1590" y="1290"/>
+                            <mxPoint x="960" y="1290"/>
+                            <mxPoint x="960" y="1190"/>
+                        </Array>
+                    </mxGeometry>
                 </mxCell>
                 <mxCell id="e13" edge="1" parent="1" source="gestor" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=12;labelBackgroundColor=default;dashed=1;startArrow=none;endArrow=open;endFill=0;endSize=10;" target="lsuper" value="exporta">
-                    <mxGeometry relative="1" as="geometry"/>
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
                 </mxCell>
                 <mxCell id="e14" edge="1" parent="1" source="gestor" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=12;labelBackgroundColor=default;dashed=1;startArrow=none;endArrow=open;endFill=0;endSize=10;" target="producto" value="&lt;&lt;crea&gt;&gt; crearDesdeLinea()">
-                    <mxGeometry relative="1" as="geometry">
+                    <mxGeometry relative="1" x="0.349" as="geometry">
+                        <mxPoint as="offset"/>
                         <Array as="points">
-                            <mxPoint x="1700" y="1380"/>
-                            <mxPoint x="720" y="1380"/>
+                            <mxPoint x="1700" y="1400"/>
+                            <mxPoint x="760" y="1400"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="e15" edge="1" parent="1" source="producto" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=12;labelBackgroundColor=default;dashed=1;startArrow=none;endArrow=block;endFill=0;endSize=14;" target="iguard" value="implementa">
-                    <mxGeometry relative="1" as="geometry"/>
+                    <mxGeometry relative="1" x="-0.3017" y="40" as="geometry">
+                        <mxPoint as="offset"/>
+                        <Array as="points">
+                            <mxPoint x="960" y="1960"/>
+                            <mxPoint x="960" y="2080.5"/>
+                        </Array>
+                    </mxGeometry>
                 </mxCell>
                 <mxCell id="e16" edge="1" parent="1" source="producto" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=12;labelBackgroundColor=default;startArrow=none;endArrow=open;endFill=0;endSize=10;" target="unidad" value="unidad (1 -- 1)">
-                    <mxGeometry relative="1" as="geometry"/>
+                    <mxGeometry relative="1" x="-0.4805" y="-50" as="geometry">
+                        <mxPoint as="offset"/>
+                        <Array as="points">
+                            <mxPoint x="960" y="1920"/>
+                            <mxPoint x="960" y="1769"/>
+                        </Array>
+                    </mxGeometry>
                 </mxCell>
-                <mxCell id="e17" edge="1" parent="1" source="pere" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=12;labelBackgroundColor=default;startArrow=none;endArrow=block;endFill=0;endSize=14;" target="producto" value="">
-                    <mxGeometry relative="1" as="geometry"/>
+                <mxCell id="e17" edge="1" parent="1" source="pere" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=12;labelBackgroundColor=default;startArrow=none;endArrow=block;endFill=0;endSize=14;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="producto" value="">
+                    <mxGeometry relative="1" x="0.0741" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="250" y="2301"/>
+                            <mxPoint x="680" y="2301"/>
+                        </Array>
+                    </mxGeometry>
                 </mxCell>
                 <mxCell id="e18" edge="1" parent="1" source="nope" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=12;labelBackgroundColor=default;startArrow=none;endArrow=block;endFill=0;endSize=14;" target="producto" value="">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="e19" edge="1" parent="1" source="limp" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=12;labelBackgroundColor=default;startArrow=none;endArrow=block;endFill=0;endSize=14;" target="producto" value="">
-                    <mxGeometry relative="1" as="geometry"/>
+                <mxCell id="e19" edge="1" parent="1" source="limp" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=12;labelBackgroundColor=default;startArrow=none;endArrow=block;endFill=0;endSize=14;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="producto" value="">
+                    <mxGeometry relative="1" x="0.0727" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1200" y="2301"/>
+                            <mxPoint x="760" y="2301"/>
+                        </Array>
+                    </mxGeometry>
                 </mxCell>
                 <mxCell id="e20" edge="1" parent="1" source="lista" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=12;labelBackgroundColor=default;startArrow=diamondThin;startFill=1;startSize=16;endArrow=none;" target="nodo" value="head / tail (1 -- 0..*)">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="leyenda" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;size=14;align=left;verticalAlign=top;spacingLeft=8;spacingTop=4;fontSize=12;fillColor=#f5f5f5;strokeColor=#666666;" value="&lt;b&gt;Leyenda&lt;/b&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;◆ Composicion&lt;/b&gt;: el dueño crea y controla la vida del objeto.&lt;/div&gt;&lt;div&gt;   Despensa crea su Lista&amp;lt;Producto&amp;gt;; Lista crea sus Nodo.&lt;/div&gt;&lt;div&gt;&lt;b&gt;◇ Agregacion&lt;/b&gt;: la Despensa guarda Productos que se crean&lt;/div&gt;&lt;div&gt;   afuera (Main o GestorArchivos) y se agregan con agregar(p).&lt;/div&gt;&lt;div&gt;&lt;b&gt;→ Asociacion&lt;/b&gt;: solo referencia objetos que ya existen.&lt;/div&gt;&lt;div&gt;   HiloCaducidad vigila la misma Despensa que usa Main.&lt;/div&gt;&lt;div&gt;&lt;b&gt;⇢ Dependencia&lt;/b&gt;: lo usa como parametro o metodo static&lt;/div&gt;&lt;div&gt;   (GestorArchivos, Consola, generar(despensa)).&lt;/div&gt;&lt;div&gt;&lt;b&gt;▷ Herencia&lt;/b&gt;: Perecedero, NoPerecedero y Limpieza extienden Producto.&lt;/div&gt;&lt;div&gt;&lt;b&gt;⇢▷ Realizacion&lt;/b&gt;: implementa una interfaz (IGuardable, Runnable).&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;Visibilidad: + publico, - privado, # protegido, ~ paquete.&lt;/div&gt;&lt;div&gt;Lista&amp;lt;V&amp;gt; se usa tambien en ListaSuper y HiloCaducidad (avisos).&lt;/div&gt;" vertex="1">
-                    <mxGeometry height="300" width="470" x="1780" y="52.5" as="geometry"/>
+                    <mxGeometry height="300" width="470" x="25" y="1980" as="geometry"/>
                 </mxCell>
                 <mxCell id="poli" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;size=14;align=left;verticalAlign=top;spacingLeft=8;spacingTop=4;fontSize=12;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;b&gt;Polimorfismo (dynamic dispatch)&lt;/b&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;for (var n = productos.begin(); n != null; n = n.sig)&lt;/div&gt;&lt;div&gt;   if (n.valor.necesitaReponer()) r.append(n.valor);&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;Leche (Perecedero) vencida → true aunque queden 2&lt;/div&gt;&lt;div&gt;Arroz (NoPerecedero) con 3 kg → false&lt;/div&gt;&lt;div&gt;Cloro (Limpieza) en 1 con minimo 1 → true (1 &amp;lt;= 1.5)&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;Lo mismo con estaVencido() y toLinea(): GestorArchivos&lt;/div&gt;&lt;div&gt;guarda cada producto sin saber de que tipo es.&lt;/div&gt;" vertex="1">
-                    <mxGeometry height="240" width="440" x="40" y="1709" as="geometry"/>
+                    <mxGeometry height="240" width="440" x="25" y="1730" as="geometry"/>
                 </mxCell>
                 <mxCell id="hilos" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;size=14;align=left;verticalAlign=top;spacingLeft=8;spacingTop=4;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;b&gt;Concurrencia&lt;/b&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;Hilo 1 (main): menu → agregar / consumir / eliminar&lt;/div&gt;&lt;div&gt;Hilo 2 (HiloCaducidad): cada 10 s → revisar()&lt;/div&gt;&lt;div&gt;   → despensa.vencidos() y porVencer(3)&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;Los dos comparten la misma Despensa. Sus metodos son&lt;/div&gt;&lt;div&gt;&lt;b&gt;synchronized&lt;/b&gt;: si un hilo esta dentro, el otro espera.&lt;/div&gt;&lt;div&gt;Main muestra los avisos antes del menu para no&lt;/div&gt;&lt;div&gt;ensuciar lo que el usuario esta escribiendo.&lt;/div&gt;" vertex="1">
-                    <mxGeometry height="220" width="420" x="40" y="1449" as="geometry"/>
+                    <mxGeometry height="220" width="420" x="25" y="1490" as="geometry"/>
                 </mxCell>
                 <mxCell id="archivo" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;size=14;align=left;verticalAlign=top;spacingLeft=8;spacingTop=4;fontSize=12;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;b&gt;data/despensa.txt&lt;/b&gt;&lt;div&gt;TIPO;nombre;cantidad;minima;UNIDAD;[extra]&lt;/div&gt;&lt;div&gt;PERECEDERO;Leche;2;1;LITRO;2026-11-27&lt;/div&gt;&lt;div&gt;NOPERECEDERO;Arroz;2;1;KG&lt;/div&gt;&lt;div&gt;LIMPIEZA;Cloro;1;1;LITRO;true&lt;/div&gt;" vertex="1">
-                    <mxGeometry height="130" width="360" x="1880" y="1455" as="geometry"/>
+                    <mxGeometry height="130" width="360" x="25" y="1350" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
