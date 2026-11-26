@@ -3,7 +3,7 @@ package utils;
 /* ****************************************************************
  * Taller 5: Clase Lista
  * Lista doblemente enlazada generica (head <-> ... <-> tail).
- * @Author: Joshua Osorio Osorio
+ * @Author: J03 O^2
  * @Date:   Octubre/2026
  * **************************************************************** */
 

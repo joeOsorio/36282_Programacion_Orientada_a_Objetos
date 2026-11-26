@@ -2,7 +2,7 @@
  * Taller 2: Clase Platillo
  * Clase base (concreta) de todos los platillos. Guarda los 4 toppings
  * como arreglo de boolean (true = lo lleva).
- * @Author: Joshua Osorio Osorio
+ * @Author: J03 O^2
  * @Date:   Octubre/2026
  * **************************************************************** */
 
@@ -47,7 +47,8 @@ public class Platillo implements IPlatillo {
 		return toppings[num - 1];
 	}
 
-	// Solo valida el rango y cambia el valor; cada subclase decide si agrega o quita
+	// Solo valida el rango y cambia el valor; cada subclase decide si agrega o
+	// quita
 	protected boolean cambiarTopping(int num, boolean valor) {
 		if (!numeroValido(num)) {
 			System.out.println("Error: el topping debe ser del 1 al " + toppings.length + ".");

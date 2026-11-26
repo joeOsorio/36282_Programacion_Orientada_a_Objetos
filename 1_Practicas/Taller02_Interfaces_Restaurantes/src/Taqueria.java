@@ -1,7 +1,7 @@
 /* ****************************************************************
  * Taller 2: Clase Taqueria
  * Restaurante que vende Tacos. Redefine getMenu() y crearPlatillo().
- * @Author: Joshua Osorio Osorio
+ * @Author: J03 O^2
  * @Date:   Octubre/2026
  * **************************************************************** */
 

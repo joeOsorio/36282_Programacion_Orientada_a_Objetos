@@ -1,7 +1,7 @@
 /* ****************************************************************
  * Taller 2: Interfaz IAgregable
  * Platillos que empiezan sin toppings y el cliente decide cuales agregar.
- * @Author: Joshua Osorio Osorio
+ * @Author: J03 O^2
  * @Date:   Octubre/2026
  * **************************************************************** */
 

@@ -2,7 +2,7 @@
  * Taller 3: Clase Numero
  * Un numero entero que se puede mostrar en binario, octal y hexadecimal.
  * Implementa las 3 interfaces usando su atributo valor.
- * @Author: Joshua Osorio Osorio
+ * @Author: J03 O^2
  * @Date:   Octubre/2026
  * **************************************************************** */
 

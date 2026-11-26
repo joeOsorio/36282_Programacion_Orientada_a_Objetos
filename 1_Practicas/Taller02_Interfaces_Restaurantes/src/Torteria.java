@@ -1,7 +1,7 @@
 /* ****************************************************************
  * Taller 2: Clase Torteria
  * Restaurante que vende Tortas. Redefine getMenu() y crearPlatillo().
- * @Author: Joshua Osorio Osorio
+ * @Author: J03 O^2
  * @Date:   Octubre/2026
  * **************************************************************** */
 

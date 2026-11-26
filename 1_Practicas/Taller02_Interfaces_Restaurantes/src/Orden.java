@@ -1,7 +1,7 @@
 /* ****************************************************************
  * Taller 2: Clase Orden
  * Una orden del POS: guarda hasta 10 platillos (composicion) y genera el ticket.
- * @Author: Joshua Osorio Osorio
+ * @Author: J03 O^2
  * @Date:   Octubre/2026
  * **************************************************************** */
 

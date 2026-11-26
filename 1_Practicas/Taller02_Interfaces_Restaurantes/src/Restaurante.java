@@ -2,7 +2,7 @@
  * Taller 2: Clase Restaurante
  * Clase base (concreta) de los restaurantes de la cadena. Registra hasta 50
  * ordenes; cada subclase redefine su menu y que platillo crea.
- * @Author: Joshua Osorio Osorio
+ * @Author: J03 O^2
  * @Date:   Octubre/2026
  * **************************************************************** */
 
@@ -20,7 +20,9 @@ public class Restaurante {
 		this.siguienteFolio = 1;
 	}
 
-	/* *********************** Menu (lo redefine cada restaurante) ************************/
+	/*
+	 * *********************** Menu (lo redefine cada restaurante)
+	 ************************/
 	public String getMenu() {
 		return "  (este restaurante no tiene menu)";
 	}

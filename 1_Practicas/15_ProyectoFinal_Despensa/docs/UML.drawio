@@ -1,0 +1,271 @@
+<mxfile host="65bd71144e">
+    <diagram name="Proyecto Final - Despensa" id="despensa">
+        <mxGraphModel dx="2415" dy="1077" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="2400" pageHeight="3200" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="main" parent="1" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" value="Main" vertex="1">
+                    <mxGeometry height="733" width="500" x="640" y="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="maina" parent="main" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="~ NOMBRE_DESPENSA: String {static, final}&lt;div&gt;~ INTERVALO_HILO_SEG: int = 10 {static, final}&lt;/div&gt;&lt;div&gt;~ DIAS_AVISO: int = 3 {static, final}&lt;/div&gt;&lt;div&gt;~ OPCION_SALIR: int = 10 {static, final}&lt;/div&gt;&lt;div&gt;~ OPCION_TEST: int = 11 {static, final} (oculta)&lt;/div&gt;&lt;div&gt;~ sc: Scanner {static}&lt;/div&gt;&lt;div&gt;~ carpetaDatos, archivoDespensa, archivoLista: File {static}&lt;/div&gt;&lt;div&gt;~ despensa: Despensa {static}&lt;/div&gt;&lt;div&gt;~ lista: ListaSuper {static}&lt;/div&gt;&lt;div&gt;~ hilo: HiloCaducidad {static}&lt;/div&gt;&lt;div&gt;~ pasan, fallan: int {static}&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="199" width="500" y="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="maind" parent="main" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+                    <mxGeometry height="8" width="500" y="254" as="geometry"/>
+                </mxCell>
+                <mxCell id="mainm" parent="main" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="+ main(args: String[]): void {static}&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Menu&lt;/div&gt;&lt;div&gt;~ mostrarMenu(): void&lt;/div&gt;&lt;div&gt;~ mostrarAvisosNuevos(): void&lt;/div&gt;&lt;div&gt;~ verDespensa(): void&lt;/div&gt;&lt;div&gt;~ imprimirTabla(productos: Lista&amp;lt;Producto&amp;gt;, numerada: boolean): void&lt;/div&gt;&lt;div&gt;~ elegirProducto(accion: String): Producto&lt;/div&gt;&lt;div&gt;~ agregarProducto() / consumirProducto() / reabastecerProducto(): void&lt;/div&gt;&lt;div&gt;~ eliminarProducto() / verCaducidad() / verAvisos(): void&lt;/div&gt;&lt;div&gt;~ menuListaSuper() / imprimirLista(): void&lt;/div&gt;&lt;div&gt;~ cargarDatosPrueba(): void&lt;/div&gt;&lt;div&gt;~ guardar() / salir(): void&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Lectura segura&lt;/div&gt;&lt;div&gt;~ leerTexto(msg): String&lt;/div&gt;&lt;div&gt;~ leerEntero(msg, min, max): int&lt;/div&gt;&lt;div&gt;~ leerDouble(msg, min): double&lt;/div&gt;&lt;div&gt;~ leerSiNo(msg): boolean&lt;/div&gt;&lt;div&gt;~ leerUnidad(): Unidad&lt;/div&gt;&lt;div&gt;~ leerFecha(msg): LocalDate  (dd/mm/aaaa o +dias)&lt;/div&gt;&lt;div&gt;~ pausa() / recortar(s, max) / carpetaDatos()&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Pruebas (opcion 11 oculta)&lt;/div&gt;&lt;div&gt;~ check(nombre: String, ok: boolean): void&lt;/div&gt;&lt;div&gt;~ test(): void  (65 pruebas)&lt;/div&gt;&lt;div&gt;~ dormir(ms: long): void&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="471" width="500" y="262" as="geometry"/>
+                </mxCell>
+                <mxCell id="consola" parent="1" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" value="Consola {final}" vertex="1">
+                    <mxGeometry height="325" width="420" x="1260" y="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="consolaa" parent="consola" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="+ ANCHO: int = 78 {static, final}&lt;div&gt;- COLOR: boolean {static, final}  (-Dcolor=false)&lt;/div&gt;&lt;div&gt;+ RESET, NEGRITA, TENUE, ROJO, VERDE,&lt;/div&gt;&lt;div&gt;   AMARILLO, AZUL, MAGENTA, CYAN: String {static, final}&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="80" width="420" y="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="consolad" parent="consola" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+                    <mxGeometry height="8" width="420" y="135" as="geometry"/>
+                </mxCell>
+                <mxCell id="consolam" parent="consola" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="- Consola()  (no se instancia)&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Formato&lt;/div&gt;&lt;div&gt;+ color(codigo, texto): String {static}&lt;/div&gt;&lt;div&gt;+ colorEstado(estado): String {static}&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Pantalla&lt;/div&gt;&lt;div&gt;+ limpiar() / titulo(t) / subtitulo(t) / separador() {static}&lt;/div&gt;&lt;div&gt;+ opcion(numero, texto): void {static}&lt;/div&gt;&lt;div&gt;+ ok(t) / error(t) / aviso(t) / info(t): void {static}&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="182" width="420" y="143" as="geometry"/>
+                </mxCell>
+                <mxCell id="hilo" parent="1" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" value="HiloCaducidad" vertex="1">
+                    <mxGeometry height="529" width="400" x="40" y="880" as="geometry"/>
+                </mxCell>
+                <mxCell id="hiloa" parent="hilo" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="- despensa: Despensa {final}&lt;div&gt;- intervaloSeg: int {final}&lt;/div&gt;&lt;div&gt;- diasAviso: int {final}&lt;/div&gt;&lt;div&gt;- activo: boolean {volatile}&lt;/div&gt;&lt;div&gt;- hilo: Thread&lt;/div&gt;&lt;div&gt;- avisos: Lista&amp;lt;String&amp;gt;&lt;/div&gt;&lt;div&gt;- ultimaFirma: String&lt;/div&gt;&lt;div&gt;- hayNuevos: boolean&lt;/div&gt;&lt;div&gt;- revisiones: int&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="165" width="400" y="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="hilod" parent="hilo" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+                    <mxGeometry height="8" width="400" y="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="hilom" parent="hilo" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="+ HiloCaducidad(despensa, intervaloSeg, diasAviso)&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Ciclo de vida&lt;/div&gt;&lt;div&gt;+ iniciar(): void  (new Thread(this), daemon)&lt;/div&gt;&lt;div&gt;+ detener(): void&lt;/div&gt;&lt;div&gt;+ run(): void  (revisar() + sleep, @Override)&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Revision (synchronized)&lt;/div&gt;&lt;div&gt;+ revisar(): void&lt;/div&gt;&lt;div&gt;+ tomarAvisosNuevos(): Lista&amp;lt;String&amp;gt;&lt;/div&gt;&lt;div&gt;+ getAvisos(): Lista&amp;lt;String&amp;gt;&lt;/div&gt;&lt;div&gt;+ hayNuevos(): boolean&lt;/div&gt;&lt;div&gt;+ getRevisiones(): int&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Getters&lt;/div&gt;&lt;div&gt;+ estaActivo(): boolean&lt;/div&gt;&lt;div&gt;+ getIntervaloSeg() / getDiasAviso(): int&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="301" width="400" y="228" as="geometry"/>
+                </mxCell>
+                <mxCell id="runnable" parent="1" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" value="&lt;b&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;/b&gt;&lt;br&gt;Runnable (java.lang)" vertex="1">
+                    <mxGeometry height="118" width="260" x="40" y="680" as="geometry"/>
+                </mxCell>
+                <mxCell id="runnablea" parent="runnable" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="" vertex="1">
+                    <mxGeometry height="26" width="260" y="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="runnabled" parent="runnable" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+                    <mxGeometry height="8" width="260" y="81" as="geometry"/>
+                </mxCell>
+                <mxCell id="runnablem" parent="runnable" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="+ run(): void" vertex="1">
+                    <mxGeometry height="29" width="260" y="89" as="geometry"/>
+                </mxCell>
+                <mxCell id="despensa" parent="1" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" value="Despensa" vertex="1">
+                    <mxGeometry height="495" width="400" x="520" y="880" as="geometry"/>
+                </mxCell>
+                <mxCell id="despensaa" parent="despensa" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="- nombre: String&lt;div&gt;- productos: Lista&amp;lt;Producto&amp;gt;&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="46" width="400" y="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="despensad" parent="despensa" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+                    <mxGeometry height="8" width="400" y="101" as="geometry"/>
+                </mxCell>
+                <mxCell id="despensam" parent="despensa" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="+ Despensa(nombre: String)&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Altas, bajas y busqueda (synchronized)&lt;/div&gt;&lt;div&gt;+ agregar(p: Producto): boolean&lt;/div&gt;&lt;div&gt;+ eliminar(nombre: String): boolean&lt;/div&gt;&lt;div&gt;- indiceDe(nombre: String): int&lt;/div&gt;&lt;div&gt;+ buscar(nombre: String): Producto&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Operaciones (synchronized)&lt;/div&gt;&lt;div&gt;+ consumir(nombre: String, cuanto: double): boolean&lt;/div&gt;&lt;div&gt;+ reabastecer(nombre: String, cuanto: double): boolean&lt;/div&gt;&lt;div&gt;+ vaciar(): void&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Consultas (synchronized, polimorficas)&lt;/div&gt;&lt;div&gt;+ vencidos(): Lista&amp;lt;Producto&amp;gt;&lt;/div&gt;&lt;div&gt;+ porVencer(dias: int): Lista&amp;lt;Producto&amp;gt;&lt;/div&gt;&lt;div&gt;+ porReponer(): Lista&amp;lt;Producto&amp;gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Getters&lt;/div&gt;&lt;div&gt;+ getProductos(): Lista&amp;lt;Producto&amp;gt;&lt;/div&gt;&lt;div&gt;+ getTotal(): int&lt;/div&gt;&lt;div&gt;+ getNombre(): String&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="386" width="400" y="109" as="geometry"/>
+                </mxCell>
+                <mxCell id="lsuper" parent="1" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" value="ListaSuper" vertex="1">
+                    <mxGeometry height="393" width="400" x="1000" y="880" as="geometry"/>
+                </mxCell>
+                <mxCell id="lsupera" parent="lsuper" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="- pendientes: Lista&amp;lt;Producto&amp;gt;&lt;div&gt;- extras: Lista&amp;lt;String&amp;gt;&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="46" width="400" y="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="lsuperd" parent="lsuper" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+                    <mxGeometry height="8" width="400" y="101" as="geometry"/>
+                </mxCell>
+                <mxCell id="lsuperm" parent="lsuper" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="+ ListaSuper()&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Generar&lt;/div&gt;&lt;div&gt;+ generar(despensa: Despensa): int&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Extras&lt;/div&gt;&lt;div&gt;+ agregarExtra(texto: String): boolean&lt;/div&gt;&lt;div&gt;+ quitarExtra(numero: int): boolean&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Salida&lt;/div&gt;&lt;div&gt;+ renglones(): Lista&amp;lt;String&amp;gt;&lt;/div&gt;&lt;div&gt;+ estaVacia(): boolean&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Getters&lt;/div&gt;&lt;div&gt;+ getPendientes(): Lista&amp;lt;Producto&amp;gt;&lt;/div&gt;&lt;div&gt;+ getExtras(): Lista&amp;lt;String&amp;gt;&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="284" width="400" y="109" as="geometry"/>
+                </mxCell>
+                <mxCell id="gestor" parent="1" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" value="GestorArchivos {final}" vertex="1">
+                    <mxGeometry height="325" width="440" x="1480" y="880" as="geometry"/>
+                </mxCell>
+                <mxCell id="gestora" parent="gestor" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="+ COMENTARIO: String = &amp;quot;#&amp;quot; {static, final}" vertex="1">
+                    <mxGeometry height="29" width="440" y="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="gestord" parent="gestor" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+                    <mxGeometry height="8" width="440" y="84" as="geometry"/>
+                </mxCell>
+                <mxCell id="gestorm" parent="gestor" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="- GestorArchivos()  (no se instancia)&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Despensa (data/despensa.txt)&lt;/div&gt;&lt;div&gt;+ guardarDespensa(d: Despensa, archivo: File): boolean {static}&lt;/div&gt;&lt;div&gt;+ cargarDespensa(nombre: String, archivo: File): Despensa {static}&lt;/div&gt;&lt;div&gt;+ crearDesdeLinea(linea: String): Producto {static}&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Lista del super (data/lista_super.txt)&lt;/div&gt;&lt;div&gt;+ exportarLista(l: ListaSuper, archivo: File): boolean {static}&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Auxiliares&lt;/div&gt;&lt;div&gt;- crearCarpeta(archivo: File): void {static}&lt;/div&gt;&lt;div&gt;- ahora(): String {static}&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="233" width="440" y="92" as="geometry"/>
+                </mxCell>
+                <mxCell id="iguard" parent="1" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" value="&lt;b&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;/b&gt;&lt;br&gt;IGuardable" vertex="1">
+                    <mxGeometry height="121" width="400" x="1000" y="2010" as="geometry"/>
+                </mxCell>
+                <mxCell id="iguarda" parent="iguard" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="+ SEPARADOR: String = &amp;quot;;&amp;quot; {static, final}" vertex="1">
+                    <mxGeometry height="29" width="400" y="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="iguardd" parent="iguard" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+                    <mxGeometry height="8" width="400" y="84" as="geometry"/>
+                </mxCell>
+                <mxCell id="iguardm" parent="iguard" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="+ toLinea(): String" vertex="1">
+                    <mxGeometry height="29" width="400" y="92" as="geometry"/>
+                </mxCell>
+                <mxCell id="producto" parent="1" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" value="&lt;i&gt;Producto&lt;/i&gt; {abstract}" vertex="1">
+                    <mxGeometry height="580" width="400" x="520" y="1666" as="geometry"/>
+                </mxCell>
+                <mxCell id="productoa" parent="producto" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="# nombre: String&lt;div&gt;# cantidad: double&lt;/div&gt;&lt;div&gt;# cantidadMinima: double&lt;/div&gt;&lt;div&gt;# unidad: Unidad&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="80" width="400" y="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="productod" parent="producto" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+                    <mxGeometry height="8" width="400" y="135" as="geometry"/>
+                </mxCell>
+                <mxCell id="productom" parent="producto" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="+ Producto(nombre, cantidad, cantidadMinima, unidad)&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Abstractos&lt;/div&gt;&lt;div&gt;+ &lt;i&gt;getTipo(): String&lt;/i&gt; {abstract}&lt;/div&gt;&lt;div&gt;+ &lt;i&gt;estaVencido(): boolean&lt;/i&gt; {abstract}&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Reglas (se pueden sobrescribir)&lt;/div&gt;&lt;div&gt;+ necesitaReponer(): boolean&lt;/div&gt;&lt;div&gt;+ cantidadAComprar(): double&lt;/div&gt;&lt;div&gt;+ getEstado(): String&lt;/div&gt;&lt;div&gt;+ getDetalle(): String&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Operaciones&lt;/div&gt;&lt;div&gt;+ consumir(cuanto: double): boolean&lt;/div&gt;&lt;div&gt;+ reabastecer(cuanto: double): boolean&lt;/div&gt;&lt;div&gt;+ datosValidos(nombre, cantidad, minima): boolean {static}&lt;/div&gt;&lt;div&gt;+ formato(valor: double): String {static}&lt;/div&gt;&lt;div&gt;+ toLinea(): String  (@Override)&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Getters / Setters&lt;/div&gt;&lt;div&gt;+ getNombre(): String&lt;/div&gt;&lt;div&gt;+ getCantidad() / getCantidadMinima(): double&lt;/div&gt;&lt;div&gt;+ getUnidad(): Unidad&lt;/div&gt;&lt;div&gt;+ setCantidadMinima(m: double): void&lt;/div&gt;&lt;div&gt;+ toString(): String&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="437" width="400" y="143" as="geometry"/>
+                </mxCell>
+                <mxCell id="unidad" parent="1" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" value="&lt;b&gt;&amp;lt;&amp;lt;enum&amp;gt;&amp;gt;&lt;/b&gt;&lt;br&gt;Unidad" vertex="1">
+                    <mxGeometry height="206" width="340" x="1000" y="1666" as="geometry"/>
+                </mxCell>
+                <mxCell id="unidada" parent="unidad" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="PIEZA(&amp;quot;pz&amp;quot;)&lt;div&gt;KG(&amp;quot;kg&amp;quot;)&lt;/div&gt;&lt;div&gt;LITRO(&amp;quot;L&amp;quot;)&lt;/div&gt;&lt;div&gt;PAQUETE(&amp;quot;paq&amp;quot;)&lt;/div&gt;&lt;div&gt;- abreviatura: String {final}&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="97" width="340" y="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="unidadd" parent="unidad" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+                    <mxGeometry height="8" width="340" y="152" as="geometry"/>
+                </mxCell>
+                <mxCell id="unidadm" parent="unidad" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="+ getAbreviatura(): String&lt;div&gt;+ desdeTexto(texto: String): Unidad {static}&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="46" width="340" y="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="pere" parent="1" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" value="Perecedero" vertex="1">
+                    <mxGeometry height="427" width="420" x="40" y="2356" as="geometry"/>
+                </mxCell>
+                <mxCell id="perea" parent="pere" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="+ TIPO: String = &amp;quot;PERECEDERO&amp;quot; {static, final}&lt;div&gt;+ FORMATO_FECHA: DateTimeFormatter {static, final}&lt;/div&gt;&lt;div&gt;- fechaCaducidad: LocalDate&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="63" width="420" y="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="pered" parent="pere" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+                    <mxGeometry height="8" width="420" y="118" as="geometry"/>
+                </mxCell>
+                <mxCell id="perem" parent="pere" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="+ Perecedero(nombre, cantidad, minima, unidad, fechaCaducidad)&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Caducidad&lt;/div&gt;&lt;div&gt;+ diasParaCaducar(): long&lt;/div&gt;&lt;div&gt;+ venceEnMenosDe(dias: int): boolean&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;// @Override&lt;/div&gt;&lt;div&gt;+ getTipo(): String&lt;/div&gt;&lt;div&gt;+ estaVencido(): boolean  (fecha &amp;lt; hoy)&lt;/div&gt;&lt;div&gt;+ necesitaReponer(): boolean  (vencido o poco)&lt;/div&gt;&lt;div&gt;+ cantidadAComprar(): double  (vencido: todo)&lt;/div&gt;&lt;div&gt;+ getEstado() / getDetalle(): String&lt;/div&gt;&lt;div&gt;+ toLinea(): String  (+ ;fecha)&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Getters / Setters&lt;/div&gt;&lt;div&gt;+ getFechaCaducidad(): LocalDate&lt;/div&gt;&lt;div&gt;+ setFechaCaducidad(f: LocalDate): void&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="301" width="420" y="126" as="geometry"/>
+                </mxCell>
+                <mxCell id="nope" parent="1" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" value="NoPerecedero" vertex="1">
+                    <mxGeometry height="206" width="400" x="520" y="2356" as="geometry"/>
+                </mxCell>
+                <mxCell id="nopea" parent="nope" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="+ TIPO: String = &amp;quot;NOPERECEDERO&amp;quot; {static, final}" vertex="1">
+                    <mxGeometry height="29" width="400" y="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="noped" parent="nope" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+                    <mxGeometry height="8" width="400" y="84" as="geometry"/>
+                </mxCell>
+                <mxCell id="nopem" parent="nope" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="+ NoPerecedero(nombre, cantidad, minima, unidad)&lt;div&gt;&lt;/div&gt;&lt;div&gt;// @Override&lt;/div&gt;&lt;div&gt;+ getTipo(): String&lt;/div&gt;&lt;div&gt;+ estaVencido(): boolean  (siempre false)&lt;/div&gt;&lt;div&gt;+ getDetalle(): String&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="114" width="400" y="92" as="geometry"/>
+                </mxCell>
+                <mxCell id="limp" parent="1" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" value="Limpieza" vertex="1">
+                    <mxGeometry height="325" width="400" x="1000" y="2356" as="geometry"/>
+                </mxCell>
+                <mxCell id="limpa" parent="limp" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="+ TIPO: String = &amp;quot;LIMPIEZA&amp;quot; {static, final}&lt;div&gt;+ MARGEN: double = 1.5 {static, final}&lt;/div&gt;&lt;div&gt;- peligroso: boolean&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="63" width="400" y="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="limpd" parent="limp" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+                    <mxGeometry height="8" width="400" y="118" as="geometry"/>
+                </mxCell>
+                <mxCell id="limpm" parent="limp" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="+ Limpieza(nombre, cantidad, minima, unidad, peligroso)&lt;div&gt;&lt;/div&gt;&lt;div&gt;// @Override&lt;/div&gt;&lt;div&gt;+ getTipo(): String&lt;/div&gt;&lt;div&gt;+ estaVencido(): boolean  (siempre false)&lt;/div&gt;&lt;div&gt;+ necesitaReponer(): boolean  (minimo x 1.5)&lt;/div&gt;&lt;div&gt;+ getDetalle(): String  (aviso si es peligroso)&lt;/div&gt;&lt;div&gt;+ toLinea(): String  (+ ;peligroso)&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Getters&lt;/div&gt;&lt;div&gt;+ esPeligroso(): boolean&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="199" width="400" y="126" as="geometry"/>
+                </mxCell>
+                <mxCell id="lista" parent="1" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" value="Lista&amp;lt;V&amp;gt; (utils)" vertex="1">
+                    <mxGeometry height="342" width="360" x="1480" y="1455" as="geometry"/>
+                </mxCell>
+                <mxCell id="listaa" parent="lista" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="- head: Nodo&amp;lt;V&amp;gt; {transient}&lt;div&gt;- tail: Nodo&amp;lt;V&amp;gt; {transient}&lt;/div&gt;&lt;div&gt;+ size: int {transient}&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="63" width="360" y="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="listad" parent="lista" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+                    <mxGeometry height="8" width="360" y="118" as="geometry"/>
+                </mxCell>
+                <mxCell id="listam" parent="lista" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="+ Lista()&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Operaciones&lt;/div&gt;&lt;div&gt;+ append(valor: V): void&lt;/div&gt;&lt;div&gt;+ eliminar(id: int): boolean&lt;/div&gt;&lt;div&gt;+ get(id: int): V&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;// Getters&lt;/div&gt;&lt;div&gt;+ begin() / end(): Nodo&amp;lt;V&amp;gt;&lt;/div&gt;&lt;div&gt;+ getSize(): int&lt;/div&gt;&lt;div&gt;+ estaVacia(): boolean&lt;/div&gt;&lt;div&gt;+ mostrar() / toString()&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="216" width="360" y="126" as="geometry"/>
+                </mxCell>
+                <mxCell id="nodo" parent="1" style="swimlane;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" value="Nodo&amp;lt;T&amp;gt; (utils)" vertex="1">
+                    <mxGeometry height="155" width="360" x="1480" y="1907" as="geometry"/>
+                </mxCell>
+                <mxCell id="nodoa" parent="nodo" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="+ valor: T&lt;div&gt;+ sig: Nodo&amp;lt;T&amp;gt;&lt;/div&gt;&lt;div&gt;+ prev: Nodo&amp;lt;T&amp;gt;&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="63" width="360" y="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="nodod" parent="nodo" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+                    <mxGeometry height="8" width="360" y="118" as="geometry"/>
+                </mxCell>
+                <mxCell id="nodom" parent="nodo" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontSize=12;" value="+ Nodo(valor: T)" vertex="1">
+                    <mxGeometry height="29" width="360" y="126" as="geometry"/>
+                </mxCell>
+                <mxCell id="e1" edge="1" parent="1" source="main" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=12;labelBackgroundColor=default;startArrow=none;endArrow=open;endFill=0;endSize=10;" target="despensa" value="usa (1 -- 1)">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e2" edge="1" parent="1" source="main" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=12;labelBackgroundColor=default;startArrow=none;endArrow=open;endFill=0;endSize=10;" target="lsuper" value="usa (1 -- 1)">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e3" edge="1" parent="1" source="main" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=12;labelBackgroundColor=default;startArrow=none;endArrow=open;endFill=0;endSize=10;" target="hilo" value="inicia / detiene (1 -- 1)">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e4" edge="1" parent="1" source="main" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=12;labelBackgroundColor=default;dashed=1;startArrow=none;endArrow=open;endFill=0;endSize=10;" target="gestor" value="guarda / carga">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e5" edge="1" parent="1" source="main" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=12;labelBackgroundColor=default;dashed=1;startArrow=none;endArrow=open;endFill=0;endSize=10;" target="consola" value="imprime con">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e6" edge="1" parent="1" source="hilo" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=12;labelBackgroundColor=default;startArrow=none;endArrow=open;endFill=0;endSize=10;" target="despensa" value="vigila (1 -- 1)">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e7" edge="1" parent="1" source="hilo" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=12;labelBackgroundColor=default;dashed=1;startArrow=none;endArrow=block;endFill=0;endSize=14;" target="runnable" value="implementa">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e8" edge="1" parent="1" source="despensa" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=12;labelBackgroundColor=default;startArrow=diamondThin;startFill=0;startSize=16;endArrow=none;" target="producto" value="guarda (1 -- 0..*)">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e9" edge="1" parent="1" source="despensa" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=12;labelBackgroundColor=default;startArrow=diamondThin;startFill=1;startSize=16;endArrow=none;" target="lista" value="productos (1 -- 1)">
+                    <mxGeometry relative="1" x="0.0012" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1660" y="1330"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e10" edge="1" parent="1" source="lsuper" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=12;labelBackgroundColor=default;dashed=1;startArrow=none;endArrow=open;endFill=0;endSize=10;" target="despensa" value="generar(despensa)">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e11" edge="1" parent="1" source="lsuper" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=12;labelBackgroundColor=default;startArrow=none;endArrow=open;endFill=0;endSize=10;" target="producto" value="pendientes (1 -- 0..*)">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e12" edge="1" parent="1" source="gestor" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=12;labelBackgroundColor=default;dashed=1;startArrow=none;endArrow=open;endFill=0;endSize=10;" target="despensa" value="guarda / carga">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e13" edge="1" parent="1" source="gestor" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=12;labelBackgroundColor=default;dashed=1;startArrow=none;endArrow=open;endFill=0;endSize=10;" target="lsuper" value="exporta">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e14" edge="1" parent="1" source="gestor" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=12;labelBackgroundColor=default;dashed=1;startArrow=none;endArrow=open;endFill=0;endSize=10;" target="producto" value="&lt;&lt;crea&gt;&gt; crearDesdeLinea()">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1700" y="1380"/>
+                            <mxPoint x="720" y="1380"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e15" edge="1" parent="1" source="producto" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=12;labelBackgroundColor=default;dashed=1;startArrow=none;endArrow=block;endFill=0;endSize=14;" target="iguard" value="implementa">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e16" edge="1" parent="1" source="producto" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=12;labelBackgroundColor=default;startArrow=none;endArrow=open;endFill=0;endSize=10;" target="unidad" value="unidad (1 -- 1)">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e17" edge="1" parent="1" source="pere" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=12;labelBackgroundColor=default;startArrow=none;endArrow=block;endFill=0;endSize=14;" target="producto" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e18" edge="1" parent="1" source="nope" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=12;labelBackgroundColor=default;startArrow=none;endArrow=block;endFill=0;endSize=14;" target="producto" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e19" edge="1" parent="1" source="limp" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=12;labelBackgroundColor=default;startArrow=none;endArrow=block;endFill=0;endSize=14;" target="producto" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e20" edge="1" parent="1" source="lista" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=12;labelBackgroundColor=default;startArrow=diamondThin;startFill=1;startSize=16;endArrow=none;" target="nodo" value="head / tail (1 -- 0..*)">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="leyenda" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;size=14;align=left;verticalAlign=top;spacingLeft=8;spacingTop=4;fontSize=12;fillColor=#f5f5f5;strokeColor=#666666;" value="&lt;b&gt;Leyenda&lt;/b&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;◆ Composicion&lt;/b&gt;: el dueño crea y controla la vida del objeto.&lt;/div&gt;&lt;div&gt;   Despensa crea su Lista&amp;lt;Producto&amp;gt;; Lista crea sus Nodo.&lt;/div&gt;&lt;div&gt;&lt;b&gt;◇ Agregacion&lt;/b&gt;: la Despensa guarda Productos que se crean&lt;/div&gt;&lt;div&gt;   afuera (Main o GestorArchivos) y se agregan con agregar(p).&lt;/div&gt;&lt;div&gt;&lt;b&gt;→ Asociacion&lt;/b&gt;: solo referencia objetos que ya existen.&lt;/div&gt;&lt;div&gt;   HiloCaducidad vigila la misma Despensa que usa Main.&lt;/div&gt;&lt;div&gt;&lt;b&gt;⇢ Dependencia&lt;/b&gt;: lo usa como parametro o metodo static&lt;/div&gt;&lt;div&gt;   (GestorArchivos, Consola, generar(despensa)).&lt;/div&gt;&lt;div&gt;&lt;b&gt;▷ Herencia&lt;/b&gt;: Perecedero, NoPerecedero y Limpieza extienden Producto.&lt;/div&gt;&lt;div&gt;&lt;b&gt;⇢▷ Realizacion&lt;/b&gt;: implementa una interfaz (IGuardable, Runnable).&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;Visibilidad: + publico, - privado, # protegido, ~ paquete.&lt;/div&gt;&lt;div&gt;Lista&amp;lt;V&amp;gt; se usa tambien en ListaSuper y HiloCaducidad (avisos).&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="300" width="470" x="1780" y="52.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="poli" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;size=14;align=left;verticalAlign=top;spacingLeft=8;spacingTop=4;fontSize=12;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;b&gt;Polimorfismo (dynamic dispatch)&lt;/b&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;for (var n = productos.begin(); n != null; n = n.sig)&lt;/div&gt;&lt;div&gt;   if (n.valor.necesitaReponer()) r.append(n.valor);&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;Leche (Perecedero) vencida → true aunque queden 2&lt;/div&gt;&lt;div&gt;Arroz (NoPerecedero) con 3 kg → false&lt;/div&gt;&lt;div&gt;Cloro (Limpieza) en 1 con minimo 1 → true (1 &amp;lt;= 1.5)&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;Lo mismo con estaVencido() y toLinea(): GestorArchivos&lt;/div&gt;&lt;div&gt;guarda cada producto sin saber de que tipo es.&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="240" width="440" x="40" y="1709" as="geometry"/>
+                </mxCell>
+                <mxCell id="hilos" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;size=14;align=left;verticalAlign=top;spacingLeft=8;spacingTop=4;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;b&gt;Concurrencia&lt;/b&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;Hilo 1 (main): menu → agregar / consumir / eliminar&lt;/div&gt;&lt;div&gt;Hilo 2 (HiloCaducidad): cada 10 s → revisar()&lt;/div&gt;&lt;div&gt;   → despensa.vencidos() y porVencer(3)&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;Los dos comparten la misma Despensa. Sus metodos son&lt;/div&gt;&lt;div&gt;&lt;b&gt;synchronized&lt;/b&gt;: si un hilo esta dentro, el otro espera.&lt;/div&gt;&lt;div&gt;Main muestra los avisos antes del menu para no&lt;/div&gt;&lt;div&gt;ensuciar lo que el usuario esta escribiendo.&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="220" width="420" x="40" y="1449" as="geometry"/>
+                </mxCell>
+                <mxCell id="archivo" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;size=14;align=left;verticalAlign=top;spacingLeft=8;spacingTop=4;fontSize=12;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;b&gt;data/despensa.txt&lt;/b&gt;&lt;div&gt;TIPO;nombre;cantidad;minima;UNIDAD;[extra]&lt;/div&gt;&lt;div&gt;PERECEDERO;Leche;2;1;LITRO;2026-11-27&lt;/div&gt;&lt;div&gt;NOPERECEDERO;Arroz;2;1;KG&lt;/div&gt;&lt;div&gt;LIMPIEZA;Cloro;1;1;LITRO;true&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="130" width="360" x="1880" y="1455" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

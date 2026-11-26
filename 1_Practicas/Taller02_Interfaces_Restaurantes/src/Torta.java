@@ -1,12 +1,12 @@
 /* ****************************************************************
  * Taller 2: Clase Torta
  * Torta: inicia CON todos los toppings, el cliente elige cuales quitar.
- * @Author: Joshua Osorio Osorio
+ * @Author: J03 O^2
  * @Date:   Octubre/2026
  * **************************************************************** */
 
 public class Torta extends Platillo implements IRemovible {
-	private static final String[] TOPPINGS = {"lechuga", "tomate", "pepinillos", "cebolla"};
+	private static final String[] TOPPINGS = { "lechuga", "tomate", "pepinillos", "cebolla" };
 	private static final double PRECIO = 80.0;
 
 	public Torta() {

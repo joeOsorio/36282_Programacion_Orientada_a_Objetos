@@ -1,7 +1,7 @@
 /* ****************************************************************
  * Taller 2: Clase CadenaRestaurantes
  * La cadena tiene sus 3 restaurantes (composicion).
- * @Author: Joshua Osorio Osorio
+ * @Author: J03 O^2
  * @Date:   Octubre/2026
  * **************************************************************** */
 

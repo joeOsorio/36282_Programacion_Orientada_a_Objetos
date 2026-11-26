@@ -13,6 +13,8 @@ markit_output/
 
 # --- Instalador del JDK (pesa ~200 MB) ---
 0_Recursos/04_Apps/
+0_Recursos/Apps/
+
 
 # --- Archivos del sistema ---
 .DS_Store

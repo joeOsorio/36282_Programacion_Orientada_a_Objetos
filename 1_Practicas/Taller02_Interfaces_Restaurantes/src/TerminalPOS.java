@@ -2,7 +2,7 @@
  * Taller 2: Clase TerminalPOS
  * La terminal (tipo telefono) con la que se toma una orden. Atiende a un
  * restaurante y decide si agrega o quita toppings segun la interfaz del platillo.
- * @Author: Joshua Osorio Osorio
+ * @Author: J03 O^2
  * @Date:   Octubre/2026
  * **************************************************************** */
 
@@ -54,7 +54,9 @@ public class TerminalPOS {
 		ordenActual = null;
 	}
 
-	/* *********************** Toppings (segun la interfaz del platillo) ************************/
+	/*
+	 * *********************** Toppings (segun la interfaz del platillo)
+	 ************************/
 	public boolean agregarTopping(Platillo p, int num) {
 		if (p instanceof IAgregable) {
 			return ((IAgregable) p).agregarTopping(num);

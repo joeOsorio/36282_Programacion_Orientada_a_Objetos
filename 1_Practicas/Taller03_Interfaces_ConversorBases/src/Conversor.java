@@ -2,7 +2,7 @@
  * Taller 3: Clase Conversor
  * Utileria con el algoritmo de divisiones sucesivas para pasar un
  * numero decimal a cualquier base de 2 a 16 (sin usar Integer.toBinaryString).
- * @Author: Joshua Osorio Osorio
+ * @Author: J03 O^2
  * @Date:   Octubre/2026
  * **************************************************************** */
 

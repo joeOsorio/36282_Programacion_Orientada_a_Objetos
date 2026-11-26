@@ -5,7 +5,7 @@ import utils.Lista;
 /* ****************************************************************
  * Taller 5: Programa principal
  * Prueba la lista doblemente enlazada generica del paquete utils.
- * @Author: Joshua Osorio Osorio
+ * @Author: J03 O^2
  * @Date:   Octubre/2026
  * **************************************************************** */
 

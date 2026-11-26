@@ -1,12 +1,12 @@
 /* ****************************************************************
  * Taller 2: Clase Taco
  * Taco: inicia CON todos los toppings, el cliente elige cuales quitar.
- * @Author: Joshua Osorio Osorio
+ * @Author: J03 O^2
  * @Date:   Octubre/2026
  * **************************************************************** */
 
 public class Taco extends Platillo implements IRemovible {
-	private static final String[] TOPPINGS = {"salsa", "aguacate", "cebolla", "cilantro"};
+	private static final String[] TOPPINGS = { "salsa", "aguacate", "cebolla", "cilantro" };
 	private static final double PRECIO = 25.0;
 
 	public Taco() {

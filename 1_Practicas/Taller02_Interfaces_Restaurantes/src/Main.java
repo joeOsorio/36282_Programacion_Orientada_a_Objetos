@@ -1,8 +1,9 @@
+
 /* ****************************************************************
  * Taller 2: Clase Main
  * Punto de entrada del POS de la cadena de restaurantes: crea la cadena con
  * sus 3 restaurantes y une todo (TerminalPOS, Orden, Platillos) en un menu.
- * @Author: Joshua Osorio Osorio
+ * @Author: J03 O^2
  * @Date:   Octubre/2026
  * **************************************************************** */
 import java.util.InputMismatchException;
@@ -53,7 +54,8 @@ public class Main {
 	}
 
 	/* *********************** Configuracion ************************/
-	// La cadena crea sus 3 restaurantes (composicion); se guardan como Restaurante (upcasting)
+	// La cadena crea sus 3 restaurantes (composicion); se guardan como Restaurante
+	// (upcasting)
 	private static CadenaRestaurantes crearCadena(String nombre) {
 		CadenaRestaurantes c = new CadenaRestaurantes(nombre);
 		c.agregarRestaurante(new Hamburgueseria("Burger Joe"));

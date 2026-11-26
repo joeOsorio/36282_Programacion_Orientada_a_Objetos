@@ -5,7 +5,7 @@ package utils;
  * Nodo generico de una lista doblemente enlazada.
  * Convencion de nombres para genericos:
  *   E: elemento, K: key, N: numero, T: type, V: value
- * @Author: Joshua Osorio Osorio
+ * @Author: J03 O^2
  * @Date:   Octubre/2026
  * **************************************************************** */
 

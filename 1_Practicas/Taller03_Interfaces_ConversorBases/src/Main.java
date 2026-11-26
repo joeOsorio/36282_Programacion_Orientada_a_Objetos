@@ -1,8 +1,9 @@
+
 /* ****************************************************************
  * Taller 3: Clase Main
  * Menu para convertir numeros y textos a binario, octal y hexadecimal
  * usando las 3 interfaces (Numero y Texto las implementan).
- * @Author: Joshua Osorio Osorio
+ * @Author: J03 O^2
  * @Date:   Octubre/2026
  * **************************************************************** */
 import java.util.InputMismatchException;
